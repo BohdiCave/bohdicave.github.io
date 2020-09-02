@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    border: 0;
+}
+      
+.navbar-custom {
+    background-color: firebrick;
+}
+      
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-nav .nav-link {
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 20px;
+}
+ 
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: darkgoldenrod;
+}
+
+.col-md-12 {
+    background-color: lightslategray;
+    padding: 5px;
+}
+
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 15px 0px;
+}
+
+#search-form {
+    border: 0;
+    height: 40px;
+}
+
+#search-button {
+    border-color: darkgoldenrod; 
+    background-color:firebrick; 
+    color: goldenrod; 
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+h1, h2 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-header {
+    height: 40px;
+    padding: 0;
+}
+
+.btn-link {
+    color: firebrick;
+}
