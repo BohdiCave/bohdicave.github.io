@@ -22,9 +22,41 @@ body {
     color: darkgoldenrod;
 }
 
+#search-form {
+    border: 0;
+    height: 40px;
+}
+
+#search-button {
+    border-color: darkgoldenrod; 
+    background-color:firebrick; 
+    color: goldenrod; 
+    font-weight: bolder;
+    font-size: 20px;
+}   
+
 .container {
     margin: 0;
     flex: 1 0 auto;
+}
+
+.row-in-col {
+    margin-left: 15px;
+    padding-right: 25px;
+    width: 90%;
+    background-color: lightslategray;
+    color: white;
+}
+
+p {
+    padding-left: 25px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+ol {
+    padding-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .accordion {
@@ -43,24 +75,15 @@ body {
     height: 100%;
 }
 
+.col-md-8 {
+    padding: 0;
+}
+
 .full-width-div {
     position: absolute;
     width: 100%;
     left: 0;
     padding: 15px 0px;
-}
-
-#search-form {
-    border: 0;
-    height: 40px;
-}
-
-#search-button {
-    border-color: darkgoldenrod; 
-    background-color:firebrick; 
-    color: goldenrod; 
-    font-weight: bolder;
-    font-size: 20px;
 }
 
 h1 {
@@ -75,10 +98,11 @@ h2 {
     font-weight: bold;
     padding-bottom: 15px;
     padding-left: 15px;
+    margin-bottom: 0px;
 }
 
-#contact {
-    font-size: 32px;
+#special {
+    padding-bottom: 5px;
 }
 
 .card-header {
@@ -103,7 +127,6 @@ a {
 footer {
     flex-shrink: 0;
     background-color: firebrick;
-    padding-top: 15px;
 }
 
 #copyright {
