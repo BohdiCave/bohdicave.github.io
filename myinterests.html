@@ -12,12 +12,13 @@
   
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <header>
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-custom">
         <a class="navbar-brand" href="https://github.com/BohdiCave" target="new">BOHDAN PECHENYAK</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">Menu</span>
         </button>
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -38,100 +39,100 @@
               </div>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" id="search-form" type="search" placeholder="" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit">Partake of Wisdom</button>
-          </form>
         </div>
       </nav> 
+    </header>
 
-<div class="container">
-  <div class="row">
+    <!-- Main container-->
+    <main>
+    <div class="container">
+      <!-- Opening row -->
+      <div class="row">
+        <!-- Quarter-width column-->
         <div class="col-md-3">
-            <h1>My Interests</h1>
-            <img src="./assets/Images/photo-Bohdan.jpg" alt="Bohdan's photo">
+          <h1>Interests</h1>
+          <img src="./assets/Images/photo-Bohdan.jpg" alt="Bohdan's photo">
         </div>
+        <!-- Two-thirds-width column -->
         <div class="col-md-8">
           <div class="row-in-col">&nbsp;</div>
           <div class="row-in-col" style="background-color: white;">
             <h2 id="special">What I Obsess About</h2>
           </div>  
-            <div class="accordion" id="accordionExample">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Arts and Humanities
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul class="list-group">
-                          <li class="list-group-item">Philosophy, history, philology, literature, music and art.</li>
-                          <li class="list-group-item"><strong>Some of my favorite novelists:</strong> D.H. Lawrence, Hermann Hesse, Thomas Mann, V.Domontovych, Yuriy Kosach, Kurt Vonnegut, Milan Kundera, Umberto Eco.</li>
-                          <li class="list-group-item"><strong>Some of my favorite artists:</strong> <strong>Georgia O'Keeffe, Surrealism</strong> (Dali, Magritte, Frida Kahlo, others), <strong>Cubism</strong> (Picasso, Chagall, Archipenko, Gris, Marc, Severini, others), <strong>Art Nouveau/Secession</strong> (Mucha, Klimt), <strong>abstract art</strong> (Hilma af Klint, Klee, Kandinsky, Pollock, others), and many-many more.</li>
-                          <li class="list-group-item"><strong>At heart, I am a writer (bilingual)</strong> - of poetry, creative fiction, essays, and - yes - code, as a web developer.</li>
-                          <li class="list-group-item"><strong>Informally pursuing continued independent scholarship</strong> by following many an Ariadna's thread through the natural and social labyrinths of knowledge</li>
-                          <li class="list-group-item">Drawn to <strong>artistic pursuits</strong> both verbal and visual (collage, photography, graphic design).</li>
-                        </ul>  
-                    </div>
-                    </div>
+          <!-- Accordion-->
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">                    
+                    Arts and Humanities
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item"><strong>Informally pursuing continued independent scholarship</strong> by following many an Ariadna's thread through the natural and social labyrinths of knowledge:<strong> Philosophy, history, philology, literature, music and art.</strong></li>
+                    <li class="list-group-item"><strong>Bilingual writing:</strong> of poetry, creative fiction, essays (and code, as a web developer).</li>                      <li class="list-group-item">Drawn to <strong>artistic pursuits</strong> both verbal and visual (collage, photography, graphic design).</li>
+                    <li class="list-group-item"><strong>Some of my favorite novelists:</strong> D.H. Lawrence, Hermann Hesse, Thomas Mann, V.Domontovych, Yuriy Kosach, Kurt Vonnegut, Milan Kundera, Umberto Eco.</li>
+                    <li class="list-group-item"><strong>Some of my favorite artists:</strong> <strong>Georgia O'Keeffe, Surrealism</strong> (Dali, Magritte, Frida Kahlo, others), <strong>Cubism</strong> (Picasso, Chagall, Archipenko, Gris, Marc, Severini, others), <strong>Art Nouveau/Secession</strong> (Mucha, Klimt), <strong>abstract art</strong> (Hilma af Klint, Klee, Kandinsky, Pollock, others), and many-many more.</li>
+                  </ul>  
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Social Sciences
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul class="list-group">                   
-                            <li class="list-group-item">Sociology and anthropology, <strong>travel</strong> and languages, <strong>worldviews</strong> and cultures, <strong>decolonization and antiracism</strong>, identity and difference.</li>
-                            <li class="list-group-item">Dedicated practitioner of <strong>mindfulness-awareness meditation</strong> (<em>shamatha-vipashyana</em>), within a "secular" or "modern" Buddhist approach.</li>
-                            <li class="list-group-item">Religious studies from comparative perspective, Western and Eastern esotericism, spiritual practices and perspectives.</li>
-                            <li class="list-group-item">Psychology, psychoanalysis, psychotherapy - developmental perspective, Jungian analytical psychology, archetypes, origins of creativity, trauma-informed practices, PTSD.</li>
-                            <li class="list-group-item">History of science and mathematics, archaeology of knowledge, genealogy of social institutions.</li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Natural Sciences
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item"><strong>Study of complex systems</strong>: systems theory, <strong>chaos</strong> theory, and <strong>complexity.</strong></li>
-                            <li class="list-group-item"><strong>Evolutionary science: </strong>emergence over scale, self-organization over time, pattern formation, complex adaptive systems, evolutionary neuroscience and psychology.</li>
-                            <li class="list-group-item"><strong>Mathematics</strong> and its relation to music, geometry and its relation to philosophy and cosmology, <strong>quantum physics and relativity.</strong></li>
-                            <li class="list-group-item"><strong>Life sciences:</strong> genetics, molecular biology, systems biology, <strong>ecology and climate change.</strong></li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-                <br><br>
-            <!-- Closing Accordeon -->
+              </div>
             </div>
-        <!-- Closing Column with Accordion-->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Social Sciences
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="list-group">                   
+                    <li class="list-group-item"><strong>In the realm of sociology and anthropology: </strong>travel and languages, worldviews and cultures, decolonization and antiracism, identity and difference.</li>
+                    <li class="list-group-item"><strong>In the realm of psychology: </strong> evolutionary and moral psychology, "thinking slow and fast", multiple aspects of intelligence, flow and the origins of creativity, positive child development; a variety of psychotherapeutic perspectives, such as cognitive-behavioral, schema-based, inner family system, developmental, trauma-informed, personality-based, psychodynamic (i.e. psychoanalysis), Jungian (i.e. analytic psychology, archetypes, etc.).</li> 
+                    <li class="list-group-item"><strong>In the realm of religious studies: </strong> comparative perspective among world religions, philosophical systems and worldviews; Western and Eastern esotericism; integrative spiritual practices and perspectives. I practice <strong>mindfulness-awareness meditation</strong> (<em>shamatha-vipashyana</em>), within a "secular" or "modern Buddhist" approach.</li>
+                    <li class="list-group-item"><strong>In the realm of historical studies:</strong> history of science and maths, archaeology of knowledge, genealogy of social institutions.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Natural Sciences
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item"><strong>Study of complex systems</strong>: systems theory, <strong>chaos</strong> theory, and <strong>complexity.</strong></li>
+                    <li class="list-group-item"><strong>Evolutionary science: </strong>emergence over scale, self-organization over time, pattern formation, complex adaptive systems, evolutionary neuroscience and psychology.</li>
+                    <li class="list-group-item"><strong>Mathematics:</strong> numbers, algebras, geometries, probability theory; relation of maths to music, philosophy and cosmology, to <strong>quantum physics and relativity.</strong></li>
+                    <li class="list-group-item"><strong>Life sciences:</strong> genetics, molecular biology, systems biology, <strong>ecology and climate change.</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <br><br>
+          <!-- Closing accordion -->
+          </div>
+        <!-- Closing 2/3rd-width column -->
         </div>
-    <!-- Closing Row -->
+      <!-- Closing row -->
+      </div>
+    <!-- Closing container -->
     </div>
-<!-- Closing Container -->
-</div>
-<footer>
-    <p id="copyright">2020 &copy; Bohdan Pechenyak</p>
-</footer>
+    </main>
 
-      
-      
+    <footer>
+      <p id="copyright">2020 &copy; Bohdan Pechenyak</p>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

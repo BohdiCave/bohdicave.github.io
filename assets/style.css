@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-      
+
 .navbar-custom {
     background-color: firebrick;
 }
@@ -14,26 +14,18 @@ body {
 .navbar-custom .navbar-nav .nav-link {
     color: goldenrod;
     font-weight: bold;
-    font-size: 20px;
 }
  
+.navbar-toggler {
+    color: goldenrod;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: darkgoldenrod;
 }
-
-#search-form {
-    border: 0;
-    height: 40px;
-}
-
-#search-button {
-    border-color: darkgoldenrod; 
-    background-color:firebrick; 
-    color: goldenrod; 
-    font-weight: bolder;
-    font-size: 20px;
-}   
 
 .container {
     margin: 0;
@@ -71,8 +63,9 @@ ol {
 
 .col-md-3 {
     background-color: lightslategray;
-    padding: 5px;
+    padding: 15px 5px;
     height: 100%;
+    text-align: center;
 }
 
 .col-md-8 {
@@ -88,9 +81,9 @@ ol {
 
 h1 {
     color: white;
+    font-size: 35px;
     font-weight: bold;
     padding-top: 15px;
-    padding-left: 50px;
 }
 
 h2 {
@@ -131,12 +124,12 @@ footer {
 
 #copyright {
     color: goldenrod;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
 img {
     width: 60%;
     height: auto;
-    margin: 30px 50px;
+    margin: 30px 0px; 
 }
