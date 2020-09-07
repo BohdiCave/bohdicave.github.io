@@ -2,21 +2,18 @@ body {
     margin: 0;
     border: 0;
     height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .navbar-custom {
     background-color: firebrick;
 }
       
-.navbar-custom .navbar-brand, 
 .navbar-custom .navbar-nav .nav-link {
     color: goldenrod;
-    font-weight: bold;
 }
  
-.navbar-toggler {
+.navbar-toggler, 
+.navbar-custom .navbar-brand {
     color: goldenrod;
     font-weight: bold;
     margin-right: 15px;
@@ -29,21 +26,36 @@ body {
 
 .container {
     margin: 0;
-    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    width: 90%; 
 }
 
 .row-in-col {
     margin-left: 15px;
     padding-right: 25px;
-    width: 90%;
     background-color: lightslategray;
     color: white;
+}
+
+.row-in-col-2 {
+    margin-left: 15px;
 }
 
 p {
     padding-left: 25px;
     padding-top: 10px;
     margin-bottom: 10px;
+}
+
+p.role {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 ol {
@@ -64,12 +76,17 @@ ol {
 .col-md-3 {
     background-color: lightslategray;
     padding: 15px 5px;
-    height: 100%;
     text-align: center;
 }
 
 .col-md-8 {
     padding: 0;
+    margin-left: 15px;
+}
+
+.col-md-6 {
+    display: flex;
+    justify-content: center;
 }
 
 .full-width-div {
@@ -115,6 +132,7 @@ h2 {
 
 a {
     text-decoration-line: none;
+    text-align: center;
 }
 
 footer {
@@ -126,10 +144,21 @@ footer {
     color: goldenrod;
     font-size: 15px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 img {
     width: 60%;
     height: auto;
     margin: 30px 0px; 
+}
+
+.project {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    text-decoration: none;
+    color: white;
 }
