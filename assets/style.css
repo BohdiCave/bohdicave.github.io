@@ -1,11 +1,16 @@
+/* General */
+
 body {
     margin: 0;
     border: 0;
     height: 100%;
+    background-color: rgb(236, 240, 241);
 }
 
+/* Navigation */
+
 .navbar-custom {
-    background-color: firebrick;
+    background-color: rgb(192, 57, 43)
 }
       
 .navbar-custom .navbar-nav .nav-link {
@@ -24,25 +29,48 @@ body {
     color: darkgoldenrod;
 }
 
+/* Main content */
+
 .container {
     margin: 0;
     display: flex;
     flex-direction: column;
 }
 
-.row {
-    width: 90%; 
+h1 {
+    color: rgb(236, 240, 241);
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 15px;
 }
 
-.row-in-col {
-    margin-left: 15px;
-    padding-right: 25px;
-    background-color: lightslategray;
-    color: white;
+h2 {
+    color: rgb(52, 73, 94);
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 0px;
 }
 
-.row-in-col-2 {
-    margin-left: 15px;
+.special {
+    padding-bottom: 5px;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    margin: 30px 0px; 
+    border-radius: 25px;
+}
+
+a {
+    text-decoration-line: none;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: rgb(236, 240, 241);
 }
 
 p {
@@ -55,13 +83,63 @@ p.role {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
-ol {
-    padding-bottom: 15px;
-    margin-bottom: 0px;
+.text-in-box {
+    padding-right: 25px;
 }
+
+/* Grid */
+
+.row {
+    width: 90%; 
+}
+
+.row-in-col {
+    margin-left: 15px;
+    background-color: rgb(52, 73, 94);
+    color: rgb(236, 240, 241);
+    border-radius: 15px;
+}
+
+#row-in-col {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+#row-in-col-2 {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.row-in-col-2 {
+    margin-left: 15px;
+}
+
+.portfolio-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-md-3 {
+    background-color: rgb(52, 73, 94);
+    padding: 15px 5px;
+    text-align: center;
+}
+
+.col-md-8 {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 15px 0px;
+}
+
+/* Accordion styling */
 
 .accordion {
     width: 90%;
@@ -72,57 +150,28 @@ ol {
     width: 300px;
     margin-left: 15px;
 }
-
-.col-md-3 {
-    background-color: lightslategray;
-    padding: 15px 5px;
-    text-align: center;
-}
-
-.col-md-8 {
-    padding: 0;
-    margin-left: 15px;
-}
-
-.col-md-6 {
-    display: flex;
-    justify-content: center;
-}
-
-.full-width-div {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    padding: 15px 0px;
-}
-
-h1 {
-    color: white;
-    font-size: 35px;
-    font-weight: bold;
-    padding-top: 15px;
-}
-
-h2 {
-    color: lightslategray;
-    font-weight: bold;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    margin-bottom: 0px;
-}
-
-.special {
-    padding-bottom: 5px;
-}
-
 .card-header {
     height: 40px;
     padding: 0;
-    background-color: lightslategray;
+    background-color: rgb(52, 73, 94);
+}
+
+.card-body, .list-group-item {
+    background-color: rgb(236, 240, 241);
 }
 
 .btn-link {
-    color: white;
+    color: rgb(236, 240, 241);
+}
+
+.btn-link:hover {
+    text-decoration-line: underline; 
+    color: rgb(236, 240, 241);
+}
+
+ol {
+    padding-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .list-group-item {
@@ -130,35 +179,31 @@ h2 {
     padding: 5px;
 }
 
-a {
-    text-decoration-line: none;
-    text-align: center;
-}
+/* Footer styling */
 
 footer {
     flex-shrink: 0;
-    background-color: firebrick;
+    background-color: rgb(192, 57, 43)
 }
 
-#copyright {
+#copyright, .copyright {
     color: goldenrod;
     font-size: 15px;
     text-align: center;
     padding-bottom: 10px;
 }
 
-img {
-    width: 60%;
+/* Portfolio page styling */
+
+figure {
+    width: 50%;
     height: auto;
-    margin: 30px 0px; 
+    display: flex;
+    justify-content: center;
 }
 
-.project {
-    width: 100%;
-    height: auto;
-}
-
-.caption {
+figcaption {
     text-decoration: none;
-    color: white;
+    color: rgb(236, 240, 241);
+    padding-bottom: 20px;
 }

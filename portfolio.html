@@ -20,8 +20,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a></li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               About Me</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -38,53 +38,59 @@
     
     <main>
       <div class="container">
+        
         <div class="row">
+
           <div class="col-md-3">
             <h1>My Portfolio</h1>
             <img src="./assets/Images/photo-Bohdan.jpg" alt="Bohdan's photo">
           </div>
+          
           <div class="col-md-8">
-            <div class="row row-in-col">&nbsp;</div>
+            
+            <div class="row row-in-col" id="row-in-col">&nbsp;</div>
+            
             <div class="row row-in-col-2">
               <h2 class="special">Selected projects</h2>
             </div>
-            <div class="row row-in-col">
-              <div class="col-md-6">
-                <a href="https://bohdicave.github.io/Code_Refactor/">
+            
+            <div class="row row-in-col portfolio-row">
+                <figure>
+                  <a href="https://bohdicave.github.io/Code_Refactor/">  
                   <img class="project" src="assets/Images/code-refactor.png" alt="Code Refactor Project">
-                  <div class="caption">Code Refactoring</div>
-                </a>
-              </div>
-              <div class="col-md-6">
-                <a href="https://bohdicave.github.io/oppo_hippo/">
+                  <figcaption>Code Refactoring</figcaption>
+                  </a>
+                </figure>
+                <figure>
+                  <a href="https://bohdicave.github.io/oppo_hippo/">
                   <img class="project" src="assets/Images/CSS-bio-page.png" alt="CSS bio page">
-                  <div class="caption">CSS: Bio Page</div>
-                </a>
-              </div>
-            </div>
-            <div class="row row-in-col">
-              <div class="col-md-6">
-                <a href="https://bohdicave.github.io/Prework_Projects/Module-6/index.html">
+                  <figcaption>CSS: Bio Page</figcaption>
+                  </a>
+                </figure>
+                <figure>
+                  <a href="https://bohdicave.github.io/Prework_Projects/Module-6/index.html">
                   <img class="project" src="assets/Images/javascript-buttons.png" alt="Javascript buttons">
-                  <div class="caption">Javascript: Buttons and Canvas API</div>
-                </a>
-              </div>
-              <div class="col-md-6">
-                <a href="https://bohdicave.github.io/Prework_Projects/Module-4/fanpage.html">
+                  <figcaption>JS: Buttons and Canvas API</figcaption>
+                  </a>
+                </figure>
+                <figure>
+                  <a href="https://bohdicave.github.io/Prework_Projects/Module-4/fanpage.html">
                   <img class="project" src="assets/Images/CSS-fanpage.png" alt="CSS Fanpage">
-                  <div class="caption">CSS: Fan page</div>
-                </a>
-              </div>
+                  <figcaption>CSS: Fan page</figcaption>
+                  </a>
+                </figure>
             </div>
-            <div class="row row-in-col">&nbsp;</div>
-            </div>
+            
+            <div class="row row-in-col-2">&nbsp;</div>
+            
+          </div>
           </div>
         </div>
       </div>
     </main>
       
     <footer>
-      <p id="copyright">2020 &copy; Bohdan Pechenyak</p>
+      <p id="copyright">2020 &copy; <a class="copyright" href="https://github.com/BohdiCave" target="new">Bohdan Pechenyak</a></p>
     </footer>
       
       
