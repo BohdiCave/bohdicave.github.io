@@ -38,12 +38,15 @@
     
     <main class="container">
         <section class="row">
-          <aside class="col-md-3">
-            <h1>Contacts</h1>
+          <aside class="column1">
             <img src="./assets/Images/photo-Bohdan.jpg" alt="Bohdan's photo">
+            <h1>Contacts</h1>
           </aside>
-          <article class="col-md-8">
-            <br>
+          <article class="column2">
+            <div class="row row-in-col" id="row-in-col" style="width: 300px;">&nbsp;</div>
+            <div class="row row-in-col-2">
+              <h2 class="special">How to Reach Me</h2>  
+          </div>
             <div class="accordion2" id="accordionExample">
               <div class="card">
                 <div class="card-header" id="headingOne">
@@ -54,9 +57,9 @@
                   </h2>
                 </div>               
                 <div id="collapseOne" class="collapse show " aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <address class="card-body">
+                  <div class="card-body">
                     <a href="mailto:bohdan.pechenyak@gmail.com">bohdan.pechenyak@gmail.com</a>
-                  </address>
+                  </div>
                 </div>
               </div>
               <div class="card">
@@ -94,11 +97,8 @@
                   </div>
                 </div>
               </div>
-              <br><br>
-            <!-- Closing Accordeon -->
             </div>
           </article>
-        <!-- Closing Row -->
         </section>
     </main>
 

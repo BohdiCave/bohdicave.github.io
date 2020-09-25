@@ -9,6 +9,53 @@ body {
     background-color: rgb(236, 240, 241);
 }
 
+h1 {
+    color: rgb(236, 240, 241);
+    font-size: 28px;
+    padding: 15px;
+}
+
+h2 {
+    color: rgb(52, 73, 94);
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+
+.special {
+    padding-bottom: 5px;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    margin: 20px 0px; 
+    border-radius: 25px;
+}
+
+a {
+    text-decoration-line: none;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: rgb(236, 240, 241);
+}
+
+a#github-profile {
+    color: #ccc;
+}
+
+p {
+    padding: 15px 25px;
+    margin-bottom: 10px;
+}
+
+.text-in-box {
+    padding: 10px;
+}
+
 /* Navigation */
 
 header {
@@ -23,7 +70,13 @@ header {
     color: goldenrod;
 }
  
-.navbar-toggler, 
+.navbar-toggler {
+    color: goldenrod;
+    font-weight: bold;
+    margin-right: 15px;
+    padding-right: 25px;
+}
+
 .navbar-custom .navbar-brand {
     color: goldenrod;
     font-weight: bold;
@@ -39,67 +92,25 @@ header {
 
 .container {
     margin: 0;
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
 }
 
-h1 {
-    color: rgb(236, 240, 241);
-    font-size: 35px;
-    font-weight: bold;
-    padding-top: 15px;
-}
-
-h2 {
-    color: rgb(52, 73, 94);
-    font-weight: bold;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    margin-bottom: 0px;
-}
-
-.special {
-    padding-bottom: 5px;
-}
-
-img {
-    width: 60%;
-    height: auto;
-    margin: 30px 0px; 
-    border-radius: 25px;
-}
-
-a {
-    text-decoration-line: none;
-    text-align: center;
-}
-
-a:hover {
-    text-decoration-line: underline;
-    color: rgb(236, 240, 241);
-}
-
-p {
-    padding-left: 25px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-}
-
-p.role {
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.text-in-box {
-    padding-right: 25px;
-}
-
-/* Grid */
-
 .row {
     width: 90%; 
+    display: flex;
+    flex-direction: row;
+}
+
+.column1 {
+    background-color: rgb(52, 73, 94);
+    padding: 15px 5px;
+    text-align: center;
+    flex: 0 1 25%;
+}
+
+.column2 {
+    padding: 0;
+    flex: 1 0 40%;
 }
 
 .row-in-col {
@@ -107,6 +118,10 @@ p.role {
     background-color: rgb(52, 73, 94);
     color: rgb(236, 240, 241);
     border-radius: 15px;
+}
+
+.row-in-col-2 {
+    margin-left: 15px;
 }
 
 #row-in-col {
@@ -117,33 +132,6 @@ p.role {
 #row-in-col-2 {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-}
-
-.row-in-col-2 {
-    margin-left: 15px;
-}
-
-.portfolio-row {
-    display: flex;
-    flex-direction: row;
-}
-
-.col-md-3 {
-    background-color: rgb(52, 73, 94);
-    padding: 15px 5px;
-    text-align: center;
-}
-
-.col-md-8 {
-    padding: 0;
-    margin-left: 15px;
-}
-
-.full-width-div {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    padding: 15px 0px;
 }
 
 /* Accordion styling */
@@ -163,7 +151,7 @@ p.role {
     background-color: rgb(52, 73, 94);
 }
 
-.card-body, .list-group-item {
+.card-body {
     background-color: rgb(236, 240, 241);
 }
 
@@ -184,6 +172,7 @@ ol {
 .list-group-item {
     border: 0;
     padding: 5px;
+    background-color: rgb(236, 240, 241);
 }
 
 /* Footer styling */
@@ -202,8 +191,15 @@ footer {
 
 /* Portfolio page styling */
 
+.portfolio-row {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 figure {
-    width: 50%;
+    width: 30%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -212,5 +208,49 @@ figure {
 figcaption {
     text-decoration: none;
     color: rgb(236, 240, 241);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Media queries for multiple device responsiveness */
+@media screen and (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    .column1 {
+        flex: 0 1 30%;
+    }
+    .column2 {
+        flex: 1 0 40%;
+    }
+    h1, h2 {
+        font-size: 24px;
+    }
+    .portfolio-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    figure {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;       
+    }   
+    .column2 {
+        align-items: center;
+    }
+    .portfolio-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    figure {
+        width: 100%;
+    }
 }
