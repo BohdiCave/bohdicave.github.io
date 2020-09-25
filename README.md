@@ -1,4 +1,4 @@
-# Github Profile Page - bohdicave.github.io
+# GitHub Portfolio Page
 
 Web developer portfolio page with brief bio and contact information.
 Showcasing a portfolio of projects using:
@@ -6,9 +6,9 @@ Showcasing a portfolio of projects using:
 * CSS - literally, in figuratively cascading levels of Bootstrap, own CSS file, and occasional inline styling.
 * JavaScript - various projects (password generator, JS quiz, Canvas API and more)
 
-# Link to the Home page
+# Link to the finished product
 
-[GitHub Pages](https://bohdicave.github.io/)
+[BohdiCave GitHub Portfolio Page](https://bohdicave.github.io/)
 
 # Screenshots:
 
