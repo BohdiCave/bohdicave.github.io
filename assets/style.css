@@ -43,7 +43,7 @@ a:hover {
     color: rgb(236, 240, 241);
 }
 
-a#github-profile {
+a#github-profile, a#linkedin-profile {
     color: #ccc;
 }
 
