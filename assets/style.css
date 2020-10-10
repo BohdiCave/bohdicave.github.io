@@ -88,6 +88,12 @@ header {
     color: darkgoldenrod;
 }
 
+.flag-icon {
+    border-radius: 5px;
+    width: 30%;
+    margin-right: 5px;
+}
+
 /* Main content */
 
 .container {
