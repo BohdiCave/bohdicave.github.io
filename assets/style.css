@@ -43,7 +43,9 @@ a:hover {
     color: rgb(236, 240, 241);
 }
 
-a#github-profile, a#linkedin-profile {
+a#github-profile, 
+a#linkedin-profile,
+#contact-info {
     color: #ccc;
 }
 
@@ -128,6 +130,7 @@ header {
 
 .row-in-col-2 {
     margin-left: 15px;
+    padding: 5px 0px;
 }
 
 #row-in-col {
@@ -148,9 +151,13 @@ header {
 }
 
 .accordion2 {
-    width: 300px;
-    margin-left: 15px;
+    width: 350px;
 }
+
+.card {
+    border-radius: 15px;
+}
+
 .card-header {
     height: 40px;
     padding: 0;
@@ -159,6 +166,20 @@ header {
 
 .card-body {
     background-color: rgb(236, 240, 241);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.accordion2 .card-body {
+    padding: 20px;
+}
+
+.card-body a {
+    color: darkslategray;
+}
+
+.card-body a:hover {
+    color: black;
 }
 
 .btn-link {
@@ -168,11 +189,6 @@ header {
 .btn-link:hover {
     text-decoration-line: underline; 
     color: rgb(236, 240, 241);
-}
-
-ol {
-    padding-bottom: 15px;
-    margin-bottom: 0px;
 }
 
 .list-group-item {
@@ -195,7 +211,28 @@ footer {
     padding-bottom: 10px;
 }
 
-/* Portfolio page styling */
+/* Portfolio styling */
+
+.showcase-row {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.screenshot-fig {
+    flex: 1 0 auto;
+}
+
+.screenshot-img {
+    width: 90%;
+}
 
 .portfolio-row {
     padding-top: 15px;
@@ -243,6 +280,12 @@ figcaption {
 }
 
 @media screen and (max-width: 400px) {
+    a#github-profile, 
+    a#linkedin-profile,
+    a#contact-info,
+    a.copyright  {
+        text-decoration: underline;
+    }
     .row {
         display: flex;
         flex-direction: column;

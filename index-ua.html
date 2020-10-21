@@ -23,19 +23,19 @@
         <!-- collapsible navigation menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="index-ua.html">Домашня <span class="sr-only">(поточна)</span></a></li>
+            <li class="nav-item active"><a class="nav-link" href="">Домашня <span class="sr-only">(поточна)</span></a></li>
             <li class="nav-item"><a class="nav-link" href="./UA-files/portfolio-ua.html">Портфоліо</a></li>
             <!-- dropdown menu -->
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Про мене</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./UA-files/wisdom-ua.html">Мультикультурна мудрість</a>
                 <a class="dropdown-item" href="./UA-files/mystory-ua.html">Моя історія</a>
                 <a class="dropdown-item" href="./UA-files/myinterests-ua.html">Мої зацікавлення</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="./UA-files/contacts-ua.html">Контакти</a>
               </div>
             </li>
             <!-- language selector -->
+            <li class="nav-item"><a class="nav-link" href="./UA-files/contacts-ua.html">Контакти</a></li>
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Вибір мови</a>
               <div class="dropdown-menu" aria-labelledby="languageSelector">
@@ -54,17 +54,21 @@
         <aside class="column1">
           <img src="./assets/Images/photo-Bohdan.jpg" alt="Фото Богдана">
           <h1>Комплексний веб-розробник</h1>
-          <a href="https://linkedin.com/in/pechenyak/" id="linkedin-profile">(Профіль на LinkedIn)</a>
+          <div id="contact-info">
+            <a href="https://linkedin.com/in/pechenyak/" id="linkedin-profile">LinkedIn</a> &bull;            
+            <a href="https://github.com/BohdiCave/" id="github-profile">GitHub</a><br>
+            <a href="./UA-files/contacts-ua.html" id="contact-info">Контакти</a> 
+          </div>
         </aside>
         <article class="column2">
-          <div class="row row-in-col" id="row-in-col">
-            <p><strong>Місія:</strong> Надавати послуги у розробці програмування особам та організаціям у таких сферах як охорона довкілля, культура та мистецтво, освіта та наука.</p>
-            </div>
+          <div class="row row-in-col" id="row-in-col">&nbsp;</div>
           <div class="row row-in-col-2">
-            <h2 class="special">Welcome! Вітаю! Servus! Χαίρετε! Hallo!</h2>
+            <h2 class="special">Місія &bull; Фокус &bull; Візія</h2>
           </div>
-          <div class="row row-in-col text-in-box">
-            
+          <div class="row row-in-col">
+            <div class="text-in-box">
+            <strong>Місія:</strong> Надавати послуги у розробці програмування особам та організаціям у таких сферах як охорона довкілля, культура та мистецтво, освіта та наука.
+            </div>  
             <ul class="bullet-points">
               <li><strong>Охорона довкілля:</strong> екологія, консервація, підтримування екосистем, пом'якшення наслідків зміни клімату.</li>
               <li><strong>Мистецтво та культура:</strong> мистецькі та культурні ініціативи що сприяють міжкультурному діалогу, навчають толерантності, розвивають міжкультурну компетентність.</li>
@@ -72,89 +76,39 @@
             </ul>
           </div>
           <div class="row row-in-col-2">
-            <h2 class="special">Міжкультурна мудрість</h2>
+            <h2 class="special">Показові проєкти</h2>
           </div>
-          <div class="accordion" id="accordionExample">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Українська
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">Краще голий та правдивий, ніж багатий та беззаконний.<br>- <strong>Григорій Сковорода, філософ</strong></li>
-                    <li class="list-group-item">Лиш боротись - значить жить! Vivere memento!<br>- <strong>Іван Франко, письменник та філософ</strong></li>
-                    <li class="list-group-item">Сором - хилитися і долі коритися.<br>- <strong>Леся Українка, поетка та драматургиня</strong></li>
-                    <li class="list-group-item">Людина створена для щастя, як птах для польоту.<br>- <strong>Володимир Короленко, письменник</strong></li>
-                    <li class="list-group-item">Єдине, що від нас іще залежить, - принаймні вік прожити, як належить.<br>- <strong>Ліна Костенко, поетка</strong></li>
-                  </ul>  
-                </div>
-              </div>
+          <div class="row row-in-col showcase-row">
+            <div class="showcase">
+              <figure>
+                <a href="https://bohdicave.github.io/StockUp">
+                <img class="project" src="./assets/Images/Projects/AJAX-APIs-StockUp.png" alt="AJAX-API investment info for beginners">
+                <figcaption><strong>StockUp:</strong> Інвестиції для початківців. Проєкт з AJAX-API для мобільних пристроїв (mobile-first)</figcaption>
+                </a>
+              </figure>
+              <figure class="screenshot-fig">
+                <a href="https://github.com/BohdiCave/StockUp">
+                  <img class="screenshot-img" src="./assets/Images/Projects/stockUp-mobile-screenshot.png" alt="Screenshot of the mobile version">
+                  <figcaption>Колаборативний репозиторій на GitHub</figcaption>
+                </a>
+              </figure>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Латинська
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item"><strong>Omnia mea mecum porto. </strong><br> Все своє ношу з собою. - <strong>Біас з Пріени</strong></li>
-                    <li class="list-group-item"><strong>Veni, vidi, vici.</strong> <br> Прийшов, побачив, переміг. - <strong>Юлій Цезар</strong></li>
-                    <li class="list-group-item"><strong>Homo homini lupus est. </strong><br> Людина людині - вовк. - <strong>Плавт</strong></li>
-                    <li class="list-group-item"><strong>Sapienti sat. </strong><br> Мудрому вистачить. - <strong>Плавт</strong></li>
-                    <li class="list-group-item"><strong>In vino veritas.</strong> <br> Правда - у вині. - <strong>Пліній старший</strong></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="showcase">
+              <figure>
+                <a href="https://bohdicave.github.io/Weather-Dashboard">
+                <img class="project" src="./assets/Images/Projects/AJAX-weather-dashboard.png" alt="AJAX-based searchable weather dashboard">
+                <figcaption><strong>Погода в світі</strong><br> для мандрівників: OpenWeatherMap API <br> (AJAX, JSON та jQuery)</figcaption>
+                </a>
+              </figure>
+              <figure class="screenshot-fig">
+                <a href="https://github.com/BohdiCave/Weather-Dashboard">
+                <img class="screenshot-img" src="./assets/Images/Projects/weather-screenshot.png" alt="Weather dashboard screenshot">
+                <figcaption>Репозиторій погодного проєкту на GitHub</figcaption>
+                </a>
+              </figure>
             </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Грецька
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item"><strong>γνῶθι σεαυτόν. Gnôthi seautón. </strong><br> Знай себе. - <strong>Геракліт</strong></li>
-                    <li class="list-group-item"><strong>ἀγεωμέτρητος μηδεὶς εἰσίτω. Ageōmétrētos mēdeìs eisítō.</strong> <br> Нехай ніхто без знання геометрії не заходить. - <strong>Платон</strong></li>
-                    <li class="list-group-item"><strong>ἀνάγκᾳ δ’ οὐδὲ θεοὶ μάχονται. Anánkāi d'oudè theoì mákhontai.</strong> <br> Навіть боги не перечать необхідності. - <strong>Симонід</strong></li>
-                    <li class="list-group-item"><strong>δῶς μοι πᾶ στῶ καὶ τὰν γᾶν κινάσω. Dôs moi pâ stô, kaì tàn gân kīnā́sō.</strong> <br> Дайте мені точку опори - і я переверну світ. - <strong>Архімед</strong></li>
-                    <li class="list-group-item"><strong>ἓν οἶδα ὅτι οὐδὲν οἶδα. Hèn oîda hóti oudèn oîda.</strong> <br> Я знаю лише одне: що я не знаю нічого. - <strong>Сократ</strong></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingFour">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Німецька
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li class="list-group-item"><strong>Wer sein selbst Meister ist und sich beherrschen kann, dem ist die weite Welt und alles untertan. </strong><br> Той, хто опанував себе та керує своїми емоціями, має перед собою ввесь широкий світ і все у ньому. - <strong>Пауль Флемінг</strong></li>
-                    <li class="list-group-item"><strong>Lebe, wie du, wenn du stirbst, wünschen wirst, gelebt zu haben. </strong><br> Живи так, щоб лиш так і бажав прожити своє життя, коли помиратимеш. - <strong>Крістіан Фюрхтеґот Ґеллерт</strong></li>
-                    <li class="list-group-item"><strong>Jeder, der sich die Fähigkeit erhält, Schönes zu erkennen, wird nie alt werden. </strong><br> Той, хто не втрачає здатності бачити красу, ніколи не старіє. - <strong>Франц Кафка</strong></li>
-                    <li class="list-group-item"><strong>Zwei Dinge sind unendlich, das Universum und die menschliche Dummheit, aber bei dem Universum bin ich mir noch nicht ganz sicher. </strong><br> Дві речі є безмежними: всесвіт та людська дурість; але я все ще не цілком впевнений стосовно всесвіту. - <strong>Альберт Айнштайн</strong></li>
-                    <li class="list-group-item"><strong>Wir leben alle unter dem gleichen Himmel, aber wir haben nicht alle den gleichen Horizont. </strong><br> Ми всі живемо під одним небом, але не всі бачимо один горизонт. <br>- <strong>Конрад   </strong></li>
-                  </ul>  
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="row row-in-col-2">&nbsp;</div>            
           </div>
         </article>
       </section>
