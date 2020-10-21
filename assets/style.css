@@ -75,7 +75,7 @@ header {
 .navbar-toggler {
     color: goldenrod;
     font-weight: bold;
-    margin-right: 15px;
+    margin-right: 20px;
     padding-right: 25px;
 }
 
@@ -214,7 +214,7 @@ footer {
 /* Portfolio styling */
 
 .showcase-row {
-    padding-top: 15px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,50 +256,22 @@ figcaption {
 
 /* Media queries for multiple device responsiveness */
 @media screen and (max-width: 768px) {
-    .row {
-        display: flex;
-        flex-direction: row;
-    }
-    .column1 {
-        flex: 0 1 30%;
-    }
-    .column2 {
-        flex: 1 0 40%;
-    }
-    h1, h2 {
-        font-size: 24px;
-    }
-    .portfolio-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    figure {
-        width: 50%;
-    }
+    .row {display: flex; flex-direction: row;}
+    .column1 {flex: 0 1 30%;}
+    .column2 {flex: 1 0 40%;}
+    h1, h2 {font-size: 24px;}
+    .portfolio-row {display: flex; flex-direction: row; justify-content: center;}
+    figure {width: 50%;}
 }
 
 @media screen and (max-width: 400px) {
     a#github-profile, 
     a#linkedin-profile,
     a#contact-info,
-    a.copyright  {
-        text-decoration: underline;
-    }
-    .row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;       
-    }   
-    .column2 {
-        align-items: center;
-    }
-    .portfolio-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    figure {
-        width: 100%;
-    }
+    a.copyright  {text-decoration: underline;}
+    .column2 {align-items: center;}
+    figure {width: 100%;}    
+    .row {display: flex; flex-direction: column; justify-content: center;}   
+    .portfolio-row {display: flex; flex-direction: column; justify-content: center;}
+    .showcase {display: flex; flex-direction: column; justify-content: flex-start;}
 }
