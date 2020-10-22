@@ -45,7 +45,7 @@ a:hover {
 
 a#github-profile, 
 a#linkedin-profile,
-#contact-info {
+#contact-info, #resume {
     color: #ccc;
 }
 
@@ -56,6 +56,7 @@ p {
 
 .text-in-box {
     padding: 10px;
+    margin-left: 10px;
 }
 
 /* Navigation */
