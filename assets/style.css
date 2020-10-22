@@ -56,7 +56,11 @@ p {
 
 .text-in-box {
     padding: 10px;
-    margin-left: 10px;
+    margin: 10px;
+}
+
+hr {
+    border-color: whitesmoke;
 }
 
 /* Navigation */
