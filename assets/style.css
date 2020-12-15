@@ -70,29 +70,33 @@ header {
 }
 
 .navbar-custom {
-    background-color: rgb(192, 57, 43)
+    background-color: rgba(192, 57, 43)
 }
       
 .navbar-custom .navbar-nav .nav-link {
-    color: goldenrod;
+    color: rgb(253, 186, 17);
+;
 }
  
 .navbar-toggler {
-    color: goldenrod;
+    color: rgb(253, 186, 17);
+;
     font-weight: bold;
     margin-right: 20px;
     padding-right: 25px;
 }
 
 .navbar-custom .navbar-brand {
-    color: goldenrod;
+    color: rgb(253, 186, 17);
+;
     font-weight: bold;
     margin-right: 15px;
 }
 
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: darkgoldenrod;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .flag-icon {
@@ -210,8 +214,9 @@ footer {
 }
 
 #copyright, .copyright {
-    color: goldenrod;
-    font-size: 15px;
+    color: rgb(253, 186, 17);
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -255,8 +260,37 @@ figure {
 
 figcaption {
     text-decoration: none;
+    text-align: center;
     color: rgb(236, 240, 241);
     padding-bottom: 10px;
+}
+
+img.project {
+    width: 150px;
+    height: 150px;
+}
+
+.project-column {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.project-column figcaption {
+    color: rgb(253, 186, 17);
+;
+}
+
+.project-column a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(236, 240, 241);
+}
+
+.project-column a:hover {
+    text-decoration-line: underline;
 }
 
 /* Media queries for multiple device responsiveness */

@@ -1,0 +1,37 @@
+
+Web Developer with a background in (what you did before)...(continue by telling what you did well in your last role, to establish transferable/past skills: project management, leadership...) 
+
+Example: Created a process that was implemented or collaborated and led a team to reach a goal.
+
+What motivates you as a web dev or why do you have a passion for it? Do you have a professional or educational project experience you can discuss that shows how you added value? 
+What program and school did you earn your certificate in?  
+What are the top three skills you learned (present web dev skills)?
+
+Example - It is my technical expertise, passion, and leadership that make me an advantageous candidate for any team.
+Position yourself - How do your past (transferable skills from past role) and present (tech) skills make you the better candidate?  
+
+Web developer with a background in social science and a passion for arts and humanities, aiming to create an aesthetically pleasing, socially meaningful, and functionally accessible user experience on the web. Earning a certificate in full stack development (MERN stack) from University of Pennsylvania, acquiring skills in HTML5, CSS3, and JavaScript (including CSS frameworks, JS libraries, and responsive web design) and, on the backend, in MongoDB, Express.js, React.js, and Node.js. Always passionate about quality, I am known to pay attention to detail without losing focus of the overall concept. Focused on mobile-first, accessible design and development. In a recent project, I applied aspects of UX and agile development, as I worked on a team of four to develop a single-page AJAX-API app to provide up-to-date financial information to beginner investors looking to enter the markets. 
+
+Concise: NOT MET
+- Consists of 75 to 150 words.  Keep it focused, and make every line count.
+Targets role: NOT MET
+- First line presents you in your desired role.
+- Avoids identifying as a student (as you will use this after graduation).  
+- Ex: Back End Developer, Front End Developer, QA Specialist
+Education: NOT MET 
+- Includes only relevant degrees, certifications, and/or trainings.
+- Ensure you have included the bootcamp to demonstrate your technical training.
+- Ex: Certificate in Full Stack Web Development from XYZ University. 
+Includes Skills & Strengths: NOT MET
+- Includes 3-5 relevant technical skills and professional strengths that align with desired role.
+- Bonus: If available, you use the job description to determine which are the best skills to include. 
+- Show how you have applied these skills and strengths in roles or projects.
+Demonstrates value: NOT MET
+- Showcases professional or academic achievements, accomplishments, major successful projects, and recognitions.
+- Hint: Aim for professional, but if you lack professional, pull from academic.
+Positions Yourself: NOT MET
+- Sell, don’t summarize! Connect how your past experience, skills, and/or training have prepared you for your desired role. This is a place where you can give examples to support your claims.
+- Hint: To show that you are a team player, give an example of how you have worked successfully in a team environment. Show outcomes of your work.
+
+Includes Motivation/Aim:  MET 
+Presentation:  MET 
