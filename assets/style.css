@@ -40,7 +40,7 @@ a {
 
 a:hover {
     text-decoration-line: underline;
-    color: rgb(236, 240, 241);
+    color: rgb(253, 186, 17);
 }
 
 a#github-profile, 
@@ -63,6 +63,35 @@ hr {
     border-color: whitesmoke;
 }
 
+table tr {
+    height: 50px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    color: whitesmoke;
+}
+
+table a {
+    color: rgb(253, 186, 17);
+}
+
+tr.last {
+    border-bottom-width: 0;
+}
+
+th {
+    padding-right: 15px;
+}
+
+td {
+    padding: 10px 0;
+}
+
+td.first {
+    padding-top: 0;
+}
+td.last {
+    padding-bottom: 0;
+}
 /* Navigation */
 
 header {
@@ -279,13 +308,13 @@ img.project {
 }
 
 .project-column figcaption {
-    color: rgb(253, 186, 17);
+    color: rgb(236, 240, 241);
 }
 
 .project-column a {
     text-decoration: none;
     text-align: center;
-    color: rgb(236, 240, 241);
+    color: rgb(253, 186, 17);
 }
 
 .project-column a:hover {
