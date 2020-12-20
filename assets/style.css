@@ -309,7 +309,7 @@ img.project {
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
 }
 
 .project-column figcaption {
@@ -345,5 +345,6 @@ img.project {
     figure {width: 100%;}    
     .row {display: flex; flex-direction: column; justify-content: center;}   
     .portfolio-row {display: flex; flex-direction: column; justify-content: center;}
+    .project-column {width: auto;}
     .showcase {display: flex; flex-direction: column; justify-content: flex-start;}
 }
