@@ -288,15 +288,14 @@ figure {
     height: auto;
     display: flex;
     justify-content: center;
+    padding-left: 5px;
 }
 
 figcaption {
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     color: rgb(236, 240, 241);
     padding: 10px;
-    padding-left: 25px;
-    
 }
 
 img.project {
@@ -312,10 +311,6 @@ img.project {
     align-items: center;
 }
 
-.project-column figcaption {
-    color: rgb(236, 240, 241);
-}
-
 .project-column a {
     text-decoration: none;
     text-align: center;
@@ -324,6 +319,10 @@ img.project {
 
 .project-column a:hover {
     text-decoration-line: underline;
+}
+
+.project-links {
+    padding-bottom: 10px;
 }
 
 /* Media queries for multiple device responsiveness */
