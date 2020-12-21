@@ -13,18 +13,29 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-custom">
+      <nav class="navbar navbar-expand-lg navbar-custom" id="menu">
         <a class="navbar-brand" href="https://github.com/BohdiCave" target="new">Bohdan Pechenyak</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">Menu</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item active"><a class="nav-link" href="">Portfolio <span class="sr-only">(current)</span></a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="homeDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+              <div class="dropdown-menu" aria-labelledby="homeDrop">
+                <a class="dropdown-item" href="../index.html#mission">Brand Statement</a>
+                <a class="dropdown-item" href="../index.html#showcase">Project Showcase</a>
+                <a class="dropdown-item" href="../index.html#skills">My Skills</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="./EN-files/portfolio.html" id="folioDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio <span class="sr-only">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="folioDrop">
+                <a class="dropdown-item" href="#backend">Backend/Full-stack Projects</a>
+                <a class="dropdown-item" href="#frontend">Frontend Projects</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               About Me</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu" aria-labelledby="aboutDrop">
                 <a class="dropdown-item" href="wisdom.html">Cross-Cultural Wisdom</a>
                 <a class="dropdown-item" href="mystory.html">My Story</a>
                 <a class="dropdown-item" href="myinterests.html">My Interests</a>
@@ -58,7 +69,7 @@
         <article class="column2">
           <div class="row row-in-col" id="row-in-col">&nbsp;</div>
           <div class="row row-in-col-2">
-            <h2 class="special">Selected backend or full-stack projects</h2>
+            <h2 class="special" id="backend">Selected backend or full-stack projects</h2>
           </div>            
           <div class="row row-in-col portfolio-row">
             <figure class="project-column">
@@ -109,9 +120,12 @@
                 <a href="https://github.com/BohdiCave/README-writher">Github</a>
               </div>
             </figure>
+            <div class="flex-column-center">
+              <a class="back-to-top bottom-10" href="#menu">(back to menu)</a>
+            </div>
           </div>
           <div class="row row-in-col-2">
-            <h2 class="special">Selected frontend projects</h2>
+            <h2 class="special" id="frontend">Selected frontend projects</h2>
           </div>            
           <div class="row row-in-col portfolio-row">
             <figure>
@@ -150,6 +164,9 @@
               <figcaption>CSS: <br> Fan page</figcaption>
               </a>
             </figure>
+            <div class="flex-column-center">
+              <a class="back-to-top bottom-10" href="#menu">(back to menu)</a>
+            </div>
           </div>
           <div class="row row-in-col-2">&nbsp;</div>
         </article>

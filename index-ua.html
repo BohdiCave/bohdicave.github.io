@@ -14,7 +14,7 @@
   <body>
     <header>
       <!-- navigation bar -->
-      <nav class="navbar navbar-expand-lg navbar-custom">
+      <nav class="navbar navbar-expand-lg navbar-custom" id="menu">
         <a class="navbar-brand" href="https://github.com/BohdiCave" target="new">Богдан Печеняк</a>
         <!-- toggle button for collapsible menu below -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,19 +23,29 @@
         <!-- collapsible navigation menu -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="">Домашня <span class="sr-only">(поточна)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="./UA-files/portfolio-ua.html">Портфоліо</a></li>
-            <!-- dropdown menu -->
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="" id="homeDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Домашня <span class="sr-only">(поточна)</span></a>
+              <div class="dropdown-menu" aria-labelledby="homeDrop">
+                <a class="dropdown-item" href="#mission">Місія та Візія</a>
+                <a class="dropdown-item" href="#showcase">Показові проєкти</a>
+                <a class="dropdown-item" href="#skills">Вміння</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="folioDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Портфоліо</a>
+              <div class="dropdown-menu" aria-labelledby="folioDrop">
+                <a class="dropdown-item" href="./UA-files/portfolio-ua.html#backend">Комплексні/Cервер (backend)</a>
+                <a class="dropdown-item" href="./UA-files/portfolio-ua.html#frontend">Клієнт (frontend)</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Про мене</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu" aria-labelledby="aboutDrop">
                 <a class="dropdown-item" href="./UA-files/wisdom-ua.html">Мультикультурна мудрість</a>
                 <a class="dropdown-item" href="./UA-files/mystory-ua.html">Моя історія</a>
                 <a class="dropdown-item" href="./UA-files/myinterests-ua.html">Мої зацікавлення</a>
               </div>
             </li>
-            <!-- language selector -->
             <li class="nav-item"><a class="nav-link" href="./UA-files/contacts-ua.html">Контакти</a></li>
+            <!-- language selector -->
             <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Вибір мови</a>
               <div class="dropdown-menu" aria-labelledby="languageSelector">
@@ -63,33 +73,24 @@
         <article class="column2">
           <div class="row row-in-col" id="row-in-col">&nbsp;</div>
           <div class="row row-in-col-2">
-            <h2 class="special">Мої вміння</h2>
+            <h2 class="special" id="mission">Місія &bull; Фокус &bull; Візія</h2>
           </div>
-          <div class="row row-in-col">
+          <div class="row row-in-col flex-column-center">
             <div class="text-in-box">
-            <table>
-              <tr>
-                <th>Frontend:</th>
-                <td class="first">HTML5, CSS3, CSS frameworks (Bootstrap, Milligram.io, UI Kit), CSS flexbox, Javascript/JSON, jQuery-AJAX, web/third-party APIs</td>
-              </tr>
-              <tr>
-                <th>Backend:</th>
-                <td>MERN stack (MongoDB, Express.js, Node.js/npm, Express-Handlebars, Sequelize.js), XAMPP stack (PHP, MySQL), Heroku/JawsDB, WordPress</td>
-              </tr>
-              <tr>
-                <th>Навчаюся:</th>
-                <td>React.js, XAMPP stack (Apache, MariaDB, PHP-8, Perl, Laravel)</td>
-              </tr>
-              <tr class="last">
-                <th>Навчатимуся:</th>
-                <td class="last">Python, Java, С/C++, C#, Мобільні додатки (Swift/Flutter/React Native тощо), дані та їх візуалізація (GIS, D3.js, Chart.js та інші), кібербезпека.</td>
-              </tr>    
-            </table>
-            </div>
+            <strong>Місія:</strong> Надавати послуги у розробці програмування особам та організаціям у таких сферах як охорона довкілля, культура та мистецтво, освіта та наука.
+            </div>  
+            <ul class="bullet-points">
+              <li><strong>Охорона довкілля:</strong> екологія, консервація, підтримування екосистем, пом'якшення наслідків зміни клімату.</li>
+              <li><strong>Мистецтво та культура:</strong> мистецькі та культурні ініціативи що сприяють міжкультурному діалогу, навчають толерантності, розвивають міжкультурну компетентність.</li>
+              <li><strong>Наука та освіта:</strong> особливо ініціативи що перетинаються з мистецтвом, екологією та ширшою соціальною проблематикою.</li>
+            </ul>
+              <a class="back-to-top bottom-10" href="#menu">(назад до меню)</a>
           </div>
+
           <div class="row row-in-col-2">
-            <h2 class="special">Показові проєкти</h2>
+            <h2 class="special" id="showcase">Показові проєкти</h2>
           </div>
+          
           <div class="row row-in-col showcase-row">
               <div class="showcase">
                 <figure>
@@ -119,19 +120,38 @@
                 </a>
               </figure>
             </div>
+            <div class="flex-column-center">
+              <a class="back-to-top bottom-10" href="#menu">(назад до меню)</a>
+            </div>
+
           </div>
+          
           <div class="row row-in-col-2">
-            <h2 class="special">Місія &bull; Фокус &bull; Візія</h2>
+            <h2 class="special" id="skills">Вміння</h2>
           </div>
           <div class="row row-in-col">
             <div class="text-in-box">
-            <strong>Місія:</strong> Надавати послуги у розробці програмування особам та організаціям у таких сферах як охорона довкілля, культура та мистецтво, освіта та наука.
-            </div>  
-            <ul class="bullet-points">
-              <li><strong>Охорона довкілля:</strong> екологія, консервація, підтримування екосистем, пом'якшення наслідків зміни клімату.</li>
-              <li><strong>Мистецтво та культура:</strong> мистецькі та культурні ініціативи що сприяють міжкультурному діалогу, навчають толерантності, розвивають міжкультурну компетентність.</li>
-              <li><strong>Наука та освіта:</strong> особливо ініціативи що перетинаються з мистецтвом, екологією та ширшою соціальною проблематикою.</li>
-            </ul>
+            <table>
+              <tr>
+                <th>Клієнт (frontend):</th>
+                <td class="first">HTML5, CSS3, лаштунки CSS (Bootstrap, Milligram.io, UI Kit), CSS flexbox, Javascript/JSON, jQuery-AJAX, мережеві та сторонні додатки (web/third-party APIs)</td>
+              </tr>
+              <tr>
+                <th>Сервер (backend):</th>
+                <td>Комплекс MERN (MongoDB, Express.js, Node.js/npm, Express-Handlebars, Sequelize.js), комплекс XAMPP (PHP, MySQL), Heroku/JawsDB, WordPress</td>
+              </tr>
+              <tr>
+                <th>Навчаюся:</th>
+                <td>React.js, комплекс XAMPP (Apache, MariaDB, PHP-8, Perl, Laravel)</td>
+              </tr>
+              <tr class="last">
+                <th>Навчатимуся:</th>
+                <td class="last">Python, Java, С/C++, C#, мобільні додатки (Swift/Flutter/React Native тощо), дані та їх візуалізація (GIS, D3.js, Chart.js та інші), кібербезпека та ...</td>
+              </tr>    
+            </table>
+            <div class="flex-column-center">
+              <a class="back-to-top" href="#menu">(назад до меню)</a>
+            </div>            </div>            
           </div>
           <div class="row row-in-col-2">&nbsp;</div>            
         </article>
