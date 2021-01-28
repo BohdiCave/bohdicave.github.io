@@ -1,0 +1,252 @@
+/* General */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        margin: 0;
+        border: 0;
+        background-color: rgb(236, 240, 241);
+    }
+
+    img {
+        width: 70%;
+        height: auto;
+        margin: 20px 0px; 
+        border-radius: 25px;
+    }
+    p { padding: 15px 25px; margin-bottom: 10px; }
+    .text-in-box { padding: 10px; margin: 10px; }
+    .flex-column-center { display: flex; flex-direction: column; justify-content: center; }
+    .bottom-10 { margin-bottom: 10px; }
+    hr { border-color: whitesmoke; }
+    .special { padding-bottom: 5px; }
+
+    /* Headings */
+    h1 {
+        color: rgb(236, 240, 241);
+        font-size: 28px;
+        padding: 15px;
+    }
+    h2 {
+        color: rgb(52, 73, 94);
+        padding-bottom: 15px;
+        padding-left: 15px;
+        margin-bottom: 0px;
+    }
+
+    /* Links */
+    a { text-decoration-line: none; text-align: center; }
+    a:hover { text-decoration-line: underline; color: rgb(253, 186, 17); }
+    a#github-profile, a#linkedin-profile, #contact-info, #resume { color: #ccc; }
+
+    /* Tables */
+    table tr {
+        height: 50px;
+        border-width: 1px;
+        border-bottom-style: solid;
+        color: whitesmoke;
+    }
+    tr.last {border-bottom-width: 0;}
+    th {padding-right: 15px;}
+    td {padding: 10px 0;}
+    td.first {padding-top: 0;}
+    td.last {padding-bottom: 0;}
+
+/* Header - Navigation */
+    header {flex-shrink: 0;}
+    .navbar-custom {background-color: rgba(192, 57, 43)}
+    .navbar-custom .navbar-nav .nav-link {color: rgb(253, 186, 17);}
+    .navbar-toggler {
+        color: rgb(253, 186, 17);
+        font-weight: bold;
+        margin-right: 20px;
+        padding-right: 25px;
+    }
+    .navbar-custom .navbar-brand {
+        color: rgb(253, 186, 17);
+        font-weight: bold;
+        margin-right: 15px;
+    }
+    .navbar-custom .nav-item.active .nav-link,
+    .navbar-custom .nav-item:hover .nav-link {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .flag-icon {
+        border-radius: 5px;
+        width: 30%;
+        margin-right: 5px;
+    }
+    .back-to-top { 
+        text-align: center; 
+        font-size: 16px; 
+        color: rgb(253, 186, 17);
+    }
+
+/* Main content - Grid */
+    .container {
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    .row {
+        width: 90%; 
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column1 {
+        background-color: rgb(52, 73, 94);
+        padding: 15px 5px;
+        text-align: center;
+        flex: 0 1 25%;
+    }
+
+    .column2 {
+        padding: 0;
+        flex: 1 0 40%;
+    }
+
+    .row-in-col {
+        margin-left: 15px;
+        background-color: rgb(52, 73, 94);
+        color: rgb(236, 240, 241);
+        border-radius: 15px;
+    }
+
+    .row-in-col-2 {
+        margin-left: 15px;
+        padding: 5px 0px;
+    }
+
+    #row-in-col {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    #row-in-col-2 {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+/* Main content - Accordion cards */
+    .accordion {width: 90%;  margin-left: 15px;}
+    .accordion2 {width: 350px;}
+    .card {border-radius: 15px;}
+    .card-header {
+        height: 40px;
+        padding: 0;
+        background-color: rgb(52, 73, 94);
+    }
+    .card-body {
+        background-color: rgb(236, 240, 241);
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .accordion2 .card-body {padding: 20px;}
+    .card-body a {color: darkslategray;}
+    .card-body a:hover {color: black;}
+    .btn-link {color: rgb(236, 240, 241);}
+    .btn-link:hover {
+        text-decoration-line: underline; 
+        color: rgb(236, 240, 241);
+    }
+    .list-group-item {
+        border: 0;
+        padding: 5px;
+        background-color: rgb(236, 240, 241);
+    }
+
+/* Footer */
+    footer {
+        flex-shrink: 0;
+        background-color: rgb(192, 57, 43)
+    }
+
+    #copyright, .copyright {
+        color: rgb(253, 186, 17);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+/* Showcase (Home page) */
+    .showcase-row {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .showcase {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .showcase a {color: rgb(253, 186, 17);}
+    .screenshot-fig {flex: 1 0 auto;}
+    .screenshot-img {width: 90%;}
+
+/* Portfolio page */
+    .portfolio-row {
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    figure {
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding-left: 5px;
+    }
+    figcaption {
+        text-decoration: none;
+        text-align: center;
+        color: rgb(236, 240, 241);
+        padding: 10px;
+    }
+    img.project {
+        width: 150px;
+        height: 150px;
+    }
+    .project-column {
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-column a {
+        text-decoration: none;
+        text-align: center;
+        color: rgb(253, 186, 17);
+    }
+    .project-column a:hover { text-decoration-line: underline; }
+    .project-links { padding-bottom: 10px; }
+
+/* Media queries for multiple device responsiveness */
+    @media screen and (max-width: 768px) {
+        .row {display: flex; flex-direction: row;}
+        .column1 {flex: 0 1 30%;}
+        .column2 {flex: 1 0 40%;}
+        h1, h2 {font-size: 24px;}
+        .portfolio-row {display: flex; flex-direction: row; justify-content: center;}
+        figure {width: 50%;}
+    }
+
+    @media screen and (max-width: 400px) {
+        a#github-profile, 
+        a#linkedin-profile,
+        a#contact-info,
+        a.copyright  {text-decoration: underline;}
+        .column2 {align-items: center;}
+        figure {width: 100%;}    
+        .row {display: flex; flex-direction: column; justify-content: center;}   
+        .portfolio-row {display: flex; flex-direction: column; justify-content: center;}
+        .project-column {width: auto;}
+        .showcase {display: flex; flex-direction: column; justify-content: flex-start;}
+    }
