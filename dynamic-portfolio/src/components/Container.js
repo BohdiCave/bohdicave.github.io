@@ -6,7 +6,7 @@ export default function Container({address}) {
   return (
     <div className="container">
       <main className="row">
-        <Aside />
+        <Aside address={address} />
         <Article address={address} />
       </main>
     </div>
