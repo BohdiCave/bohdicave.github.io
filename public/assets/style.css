@@ -1,89 +1,91 @@
 /* General */
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100%;
-        margin: 0;
-        border: 0;
-        background-color: rgb(236, 240, 241);
-    }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+    border: 0;
+    background-color: rgb(236, 240, 241);
+}
 
-    img {
-        width: 70%;
-        height: auto;
-        margin: 20px 0px; 
-        border-radius: 25px;
-    }
-    p { padding: 15px 25px; margin-bottom: 10px; }
-    .text-in-box { padding: 10px; margin: 10px; }
-    .flex-column-center { display: flex; flex-direction: column; justify-content: center; }
-    .bottom-10 { margin-bottom: 10px; }
-    hr { border-color: whitesmoke; }
-    .special { padding-bottom: 5px; }
+img {
+    width: 70%;
+    height: auto;
+    margin: 20px 0px; 
+    border-radius: 25px;
+}
+p { padding: 15px 25px; margin-bottom: 10px; }
+.text-in-box { padding: 10px; margin: 10px; }
+.flex-column-center { display: flex; flex-direction: column; justify-content: center; }
+.bottom-10 { margin-bottom: 10px; }
+hr { border-color: whitesmoke; }
+.special { padding-bottom: 5px; }
 
-    /* Headings */
-    h1 {
-        color: rgb(236, 240, 241);
-        font-size: 28px;
-        padding: 15px;
-    }
-    h2 {
-        color: rgb(52, 73, 94);
-        padding-bottom: 15px;
-        padding-left: 15px;
-        margin-bottom: 0px;
-    }
+/* Headings */
+h1 {
+    color: rgb(236, 240, 241);
+    font-size: 28px;
+    padding: 15px;
+}
+h2 {
+    color: rgb(52, 73, 94);
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
 
-    /* Links */
-    a { text-decoration-line: none; text-align: center; }
-    a:hover { text-decoration-line: underline; color: rgb(253, 186, 17); }
-    a#github-profile, a#linkedin-profile, #contact-info, #resume { color: #ccc; }
+/* Links */
+a { text-decoration-line: none; text-align: center; }
+a:hover { text-decoration-line: underline; color: rgb(253, 186, 17); }
+a#github-profile, a#linkedin-profile, #contact-info, #resume { color: #ccc; }
 
-    /* Tables */
-    table tr {
-        height: 50px;
-        border-width: 1px;
-        border-bottom-style: solid;
-        color: whitesmoke;
-    }
-    tr.last {border-bottom-width: 0;}
-    th {padding-right: 15px;}
-    td {padding: 10px 0;}
-    td.first {padding-top: 0;}
-    td.last {padding-bottom: 0;}
+/* Tables */
+table tr {
+    height: 50px;
+    border-width: 1px;
+    border-bottom-style: solid;
+    color: whitesmoke;
+}
+tr.last {border-bottom-width: 0;}
+th {padding-right: 15px;}
+td {padding: 10px 0;}
+td.first {padding-top: 0;}
+td.last {padding-bottom: 0;}
 
-/* Header - Navigation */
-    header {flex-shrink: 0;}
-    .navbar-custom {background-color: rgba(192, 57, 43)}
-    .navbar-custom .navbar-nav .nav-link {color: rgb(253, 186, 17);}
-    .navbar-toggler {
-        color: rgb(253, 186, 17);
-        font-weight: bold;
-        margin-right: 20px;
-        padding-right: 25px;
-    }
-    .navbar-custom .navbar-brand {
-        color: rgb(253, 186, 17);
-        font-weight: bold;
-        margin-right: 15px;
-    }
-    .navbar-custom .nav-item.active .nav-link,
-    .navbar-custom .nav-item:hover .nav-link {
-        font-size: 20px;
-        font-weight: bold;
-    }
-    .flag-icon {
-        border-radius: 5px;
-        width: 30%;
-        margin-right: 5px;
-    }
-    .back-to-top { 
-        text-align: center; 
-        font-size: 16px; 
-        color: rgb(253, 186, 17);
-    }
+/* Header and Navigation */
+header {flex-shrink: 0;}
+.navbar-custom {background-color: rgba(192, 57, 43)}
+.navbar-custom .navbar-nav .nav-link {color: rgb(253, 186, 17);}
+.navbar-toggler {
+    color: rgb(253, 186, 17);
+    font-weight: bold;
+    margin-right: 20px;
+    padding-right: 25px;
+}
+.navbar-custom .navbar-brand {
+    color: rgb(253, 186, 17);
+    font-weight: bold;
+    margin-right: 15px;
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    font-size: 20px;
+    font-weight: bold;
+}
+.flag-icon {
+    border-radius: 5px;
+    width: 30%;
+    margin-right: 5px;
+}
+.back-to-top { 
+    text-align: center; 
+    font-size: 16px; 
+    color: rgb(253, 186, 17);
+}
 
-/* Main content - Grid */
+/* Main content */ 
+    
+    /* Grid */
     .container {
         margin: 0;
         flex-grow: 1;
@@ -129,9 +131,10 @@
         border-bottom-left-radius: 0px;
     }
 
-/* Main content - Accordion cards */
+    /* Accordion cards */
     .accordion {width: 90%;  margin-left: 15px;}
     .accordion2 {width: 350px;}
+    .accordion2 .card-body {padding: 20px;}
     .card {border-radius: 15px;}
     .card-header {
         height: 40px;
@@ -143,7 +146,7 @@
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    .accordion2 .card-body {padding: 20px;}
+    /* Accordion cards - lists, links and buttons */
     .card-body a {color: darkslategray;}
     .card-body a:hover {color: black;}
     .btn-link {color: rgb(236, 240, 241);}
@@ -171,7 +174,7 @@
         padding-bottom: 10px;
     }
 
-/* Showcase (Home page) */
+/* Showcase (Home page only) */
     .showcase-row {
         padding-top: 10px;
         display: flex;
@@ -189,7 +192,7 @@
     .screenshot-fig {flex: 1 0 auto;}
     .screenshot-img {width: 90%;}
 
-/* Portfolio page */
+/* Portfolio page only */
     .portfolio-row {
         padding-top: 15px;
         display: flex;
