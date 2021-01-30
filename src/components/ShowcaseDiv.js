@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Showcase from './Showcase.js';
 import LinkTop from './LinkTop.js';
 

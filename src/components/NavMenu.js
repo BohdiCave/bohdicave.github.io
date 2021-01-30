@@ -75,7 +75,7 @@ export default function NavMenu({address}) {
                     : location.pathname==="/contacts" ? "/contacts-ua"
                     : ""
                 }>
-                <img className="flag-icon" src="/assets/Images/UA.png"/>
+                <img className="flag-icon" src="/assets/Images/UA.png" alt="UA-flag"/>
                     Українська
                 </Link>
                 <Link className="dropdown-item" to={
@@ -87,7 +87,7 @@ export default function NavMenu({address}) {
                     : location.pathname==="/contacts-ua" ? "/contacts"
                     : ""
                 }>
-                    <img className="flag-icon" src="/assets/Images/US.png"/>
+                    <img className="flag-icon" src="/assets/Images/US.png" alt="US-flag"/>
                     English
                 </Link>
             </div>

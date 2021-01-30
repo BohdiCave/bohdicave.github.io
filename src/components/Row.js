@@ -1,6 +1,6 @@
 import React from 'react';
 import ShowcaseDiv from './ShowcaseDiv.js';
-import Table from './SkillsTable.js';
+import Table from './Table.js';
 import LinkTop from './LinkTop.js';
 import Project from './Project.js';
 
@@ -11,7 +11,7 @@ export default function Row({type, content, name, innerText, style, alignment, s
     { type==="dark" ? 
       (
       <div className={showcase ? "row row-in-col showcase-row" : (content==="backend" || content==="frontend") ? "row row-in-col portfolio-row" : "row row-in-col"} id={name} style={style}>
-        { content==="empty" ? {innerText} 
+        { content==="empty" ? innerText 
         : content==="showcase" ? <ShowcaseDiv/> 
         : content==="text-in-box" ? 
           ( 
@@ -47,7 +47,7 @@ export default function Row({type, content, name, innerText, style, alignment, s
       (
       <div className="row row-in-col-2">
         { content==="heading" ? (<h2 className="special" id={name}>{innerText}</h2>)
-        : content==="empty" && ({innerText}) }         
+        : content==="empty" && innerText }         
       </div>
       )
     }

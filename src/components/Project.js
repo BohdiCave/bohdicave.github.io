@@ -19,12 +19,13 @@ export default function Project({content, name, heroku}) {
                 : name==="front4" ? "../assets/Images/Projects/Frontend/pw-generator.png"
                 : name==="front5" ? "../assets/Images/Projects/Frontend/js-quiz.png"
                 : name==="front6" && "../assets/Images/Projects/Frontend/CSS-fanpage.png" } 
-            alt={ name==="front1" ? "StockUp investment app"
-                : name==="front2" ? "Searchable weather dashboard"
-                : name==="front3" ? "Daily Scheduler app"
-                : name==="front4" ? "Password Generator Project"
-                : name==="front5" ? "JavaScript Quiz App"
-                : name==="front6" && "CSS Fan page" } 
+            alt=""
+            // { name==="front1" ? "StockUp investment app"
+            //     : name==="front2" ? "Searchable weather dashboard"
+            //     : name==="front3" ? "Daily Scheduler app"
+            //     : name==="front4" ? "Password Generator Project"
+            //     : name==="front5" ? "JavaScript Quiz App"
+            //     : name==="front6" && "CSS Fan page" } 
           />
           <figcaption>
             { name==="front1" ? "AJAX-APIs: StockUp - Investment for Beginners"
@@ -36,7 +37,7 @@ export default function Project({content, name, heroku}) {
           </figcaption>
         </a>  
         )
-      : props.content==="backend" ?
+      : content==="backend" ?
         (
         <>
         <img className="project" 
@@ -46,12 +47,13 @@ export default function Project({content, name, heroku}) {
               : name==="back4" ? "../assets/Images/Projects/Backend/notable-takeaways_app.png"
               : name==="back5" ? "../assets/Images/Projects/Backend/karmateeming-manajeering_app.png"
               : name==="back6" && "../assets/Images/Projects/Backend/README-writher_app.png" }
-          alt={ name==="back1" ? "Wrappit App"
-              : name==="back2" ? "Node-Express-Handlebars app for the gourmands"
-              : name==="back3" ? "Node.js CLI app for employee management"
-              : name==="back4" ? "Express.js note taking app"
-              : name==="back5" ? "Node.js CLI app for team mgmt"
-              : name==="back6" && "Node.js CLI app to generate READMEs" }
+          alt=""
+          // { name==="back1" ? "Wrappit App"
+          //     : name==="back2" ? "Node-Express-Handlebars app for the gourmands"
+          //     : name==="back3" ? "Node.js CLI app for employee management"
+          //     : name==="back4" ? "Express.js note taking app"
+          //     : name==="back5" ? "Node.js CLI app for team mgmt"
+          //     : name==="back6" && "Node.js CLI app to generate READMEs" }
         />
         <figcaption>
           { name==="back1" ? "FULL-STACK: MVC app <br></br> for finding gifts (MySQL, Node/Express/Handlebars)"
@@ -81,34 +83,34 @@ export default function Project({content, name, heroku}) {
         </div>
         </>
         )
-      : props.content==="showcase" ?
+      : content==="showcase" ?
         (
-        <a href={ props.name==="showcase1" ? "https://github.com/BohdiCave/WrappIt" 
+        <a href={ name==="showcase1" ? "https://github.com/BohdiCave/WrappIt" 
                 : "https://github.com/BohdiCave/StockUp" }>
           <img class="screenshot-img" 
-            src={ props.name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_screenshot.png" 
+            src={ name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_screenshot.png" 
                 : "./assets/Images/Projects/Frontend/stockUp-mobile-screenshot.png" } 
-            alt={ props.name==="showcase1" ? "Screenshot of the WrappIt app" 
+            alt={ name==="showcase1" ? "Screenshot of the WrappIt app" 
                 : "Screenshot of the mobile version" } 
           />
           <figcaption>
-            Collaborative repository on GitHub { props.name==="showcase1" && "(forked)" }
+            Collaborative repository on GitHub { name==="showcase1" && "(forked)" }
           </figcaption>
         </a>
         )
-      : props.content==="screenshot" &&
+      : content==="screenshot" &&
         (
-          <a href={ props.name==="showcase1" ? "https://intense-falls-86763.herokuapp.com/" 
+          <a href={ name==="showcase1" ? "https://intense-falls-86763.herokuapp.com/" 
                   : "https://bohdicave.github.io/StockUp" }>
             <img class="project" 
-              src={ props.name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_saved-gifts_screenshot.png" 
+              src={ name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_saved-gifts_screenshot.png" 
                   : "./assets/Images/Projects/Frontend/AJAX-APIs-StockUp.png" } 
-              alt={ props.name==="showcase1" ? "Full-stack MVC (Node-MySQL-Handlebars-Express) gift suggestions app" 
+              alt={ name==="showcase1" ? "Full-stack MVC (Node-MySQL-Handlebars-Express) gift suggestions app" 
                   : "AJAX-API investment info for beginners"}
             />
             <figcaption>
-                <strong>{ props.name==="showcase1" ? "WrappIt:" : "StockUp:" }</strong> 
-                { props.name==="showcase1" ? 
+                <strong>{ name==="showcase1" ? "WrappIt:" : "StockUp:" }</strong> 
+                { name==="showcase1" ? 
                   "Gift suggestions. Full-stack Node-Express.js app with MVC architecture (MySQL/Sequelize)" 
                 : "Investment for Beginners. Mobile-first project on AJAX-APIs" }
             </figcaption>

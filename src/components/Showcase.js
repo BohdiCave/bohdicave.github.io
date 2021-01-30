@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import Figure from 'Figure.js';
+import React from 'react';
+import Figure from './Figure.js';
 
 export default function Showcase({name}) {
   return (

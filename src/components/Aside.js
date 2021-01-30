@@ -9,7 +9,7 @@ export default function Aside() {
 
     return (
       <aside className="column1">
-        <img src="./assets/Images/photo-Bohdan.jpg" alt="Bohdan's photo" />
+        <img src="./assets/Images/photo-Bohdan.jpg" alt="Bohdan Pechenyak" />
         { address==="/" ? <h1>Full-stack web developer</h1>
         : address==="/portfolio" ? <h1>My Portfolio</h1>
         : address==="/wisdom" ? <h1>Cross-Cultural Wisdom</h1>

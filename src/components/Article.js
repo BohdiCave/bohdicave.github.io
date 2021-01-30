@@ -8,9 +8,13 @@ export default function Article() {
   const address=location.pathname;
   return (
     <div className="column2">
-      <Row type="dark" content="empty" name="row-in-col" innerText="&nbsp;" 
-        style={address==="/contacts" && "width: 350px;"} 
-      />
+      {address==="/contacts" 
+      ? 
+      <Row type="dark" content="empty" name="row-in-col" innerText="&nbsp;" style={{width: 350 +'px'}} /> 
+      :
+      <Row type="dark" content="empty" name="row-in-col" innerText="&nbsp;" />
+      }
+      
       <Row type="light" content="heading" 
         name={address==="/" ? "mission" : "backend"} 
         innerText={
