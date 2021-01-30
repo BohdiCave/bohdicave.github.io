@@ -1,8 +1,9 @@
 import React from 'react';
 import NavMenu from './NavMenu.js';
 
-export default function Navbar({address}) {
-    return(
+export default function Navbar() {
+
+  return(
       <nav className="navbar navbar-expand-lg navbar-custom" id="menu">
         <a className="navbar-brand" href="https://github.com/BohdiCave" target="new">
             Bohdan Pechenyak
@@ -13,7 +14,7 @@ export default function Navbar({address}) {
         </button>
         
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <NavMenu address={address} />
+          <NavMenu />
         </div>   
       </nav>
     );

@@ -1,83 +1,95 @@
 import React from 'react';
+import { Link, useLocation } from "react-router-dom";
 
 export default function NavMenu({address}) {
     
+    const location = useLocation();
+
     return(
       <ul className="navbar-nav mr-auto">
-        <li className={address==="index.html" ? "nav-item dropdown active" : "nav-item dropdown"}>
-            <a className="nav-link dropdown-toggle" href="" id="homeDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Home {address==="index.html" ? (<><span className="sr-only">(current)</span></>) : null}
-            </a>
+        <li className={location.pathname==="/" ? "nav-item dropdown active" : "nav-item dropdown"}>
+            <Link to="/" className="nav-link dropdown-toggle" id="homeDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Home {location.pathname==="/" && (<><span className="sr-only">(current)</span></>)}
+            </Link>
             <div className="dropdown-menu" aria-labelledby="homeDrop">
-                <a className="dropdown-item" href={address==="index.html" ? "#mission" : "../index.html#mission"}>
+                <Link to={location.pathname==="/" ? "#mission" : "./#mission"} className="dropdown-item" >
                     Brand Statement
-                </a>
-                <a className="dropdown-item" href={address==="index.html" ? "#showcase" : "../index.html#showcase"}>
+                </Link>
+                <Link to={address==="/" ? "#showcase" : "./#showcase"} className="dropdown-item">
                     Project Showcase
-                </a>
-                <a className="dropdown-item" href={address==="index.html" ? "#skills" : "../index.html#skills"}>
+                </Link>
+                <Link to={address==="/" ? "#skills" : "./#skills"} className="dropdown-item">
                     My Skills
-                </a>
+                </Link>
             </div>
         </li>
 
-        <li className={address==="portfolio.html" ? "nav-item dropdown active" : "nav-item dropdown"}>
-            <a className="nav-link dropdown-toggle" href="" id="folioDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio {address==="portfolio.html" ? (<><span className="sr-only"> (current) </span></>) : null}
-            </a>
+        <li className={location.pathname==="/portfolio" ? "nav-item dropdown active" : "nav-item dropdown"}>
+            <Link to="/portfolio" className="nav-link dropdown-toggle" id="folioDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio {location.pathname==="/portfolio" && (<><span className="sr-only"> (current) </span></>)}
+            </Link>
             <div className="dropdown-menu" aria-labelledby="folioDrop">
-                <a className="dropdown-item" href={address==="portfolio.html" ? "#backend" : address==="index.html" ? "./EN-files/portfolio.html#backend" : "portfolio.html#backend"}>
+                <Link to={location.pathname==="/portfolio" ? "#backend" : "/portfolio#backend"} className="dropdown-item">
                     Backend/Full-stack Projects
-                </a>
-                <a class="dropdown-item" href={address==="portfolio.html" ? "#frontend" : address==="index.html" ? "./EN-files/portfolio.html#frontend" : "portfolio.html#frontend"}>
+                </Link>
+                <Link to={location.pathname==="/portfolio" ? "#frontend" : "/portfolio#frontend"} class="dropdown-item" >
                     Frontend Projects
-                </a>
+                </Link>
             </div>
         </li>
 
-        <li className={address==="wisdom.html" || address==="mystories.html" || address==="myinterests.html" ? "nav-item dropdown active" : "nav-item dropdown"}>
-            <a className="nav-link dropdown-toggle" href="" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li className={(location.pathname==="/wisdom" || location.pathname==="/story" || location.pathname==="/interests") ? "nav-item dropdown active" : "nav-item dropdown"}>
+            <Link to="/wisdom" className="nav-link dropdown-toggle" id="aboutDrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About Me 
-            </a>
+            </Link>
             <div className="dropdown-menu" aria-labelledby="aboutDrop">
-                <a className="dropdown-item" href={address==="wisdom.html" ? "" : address==="index.html" ? "./EN-files/wisdom.html" : "wisdom.html"}>
-                    Cross-Cultural Wisdom {address==="wisdom.html" ? (<><span className="sr-only"> (current) </span></>) : null}
-                </a>
-                <a className="dropdown-item" href={address==="mystory.html" ? "" : address==="index.html" ? "./EN-files/mystory.html" : "mystory.html"}>
-                    My Story {address==="mystory.html" ? (<><span className="sr-only"> (current) </span></>) : null}
-                </a>
-                <a className="dropdown-item" href={address==="myinterests.html" ? "" : address==="index.html" ? "./EN-files/myinterests.html" : "myinterests.html"}>
-                    My Interests {address==="myinterests.html" ? (<><span className="sr-only"> (current) </span></>) : null}
-                </a>
+                <Link to={location.pathname==="/wisdom" ? "" : "/wisdom"} className="dropdown-item">
+                    Cross-Cultural Wisdom {address==="/wisdom" && (<><span className="sr-only"> (current) </span></>)}
+                </Link>
+                <Link to={location.pathname==="/story" ? "" : "/story"} className="dropdown-item">
+                    My Story {location.pathname==="/story" && (<><span className="sr-only"> (current) </span></>)}
+                </Link>
+                <Link to={location.pathname==="/interests" ? "" : "/interests"} className="dropdown-item">
+                    My Interests {location.pathname==="/interests" && (<><span className="sr-only"> (current) </span></>)}
+                </Link>
             </div>
         </li>
 
-        <li className={address==="contacts.html" ? "nav-item active" : "nav-item"}>
-            <a className="nav-link" href={address==="contacts.html" ? "" : address==="index.html" ? "./EN-files/contacts.html" : "contacts.html"}>
-                Contacts {address==="contacts.html" ? (<><span className="sr-only"> (current) </span></>) : null}
-            </a>
+        <li className={location.pathname==="/contacts" ? "nav-item active" : "nav-item"}>
+            <Link to={location.pathname==="/contacts" ? "" : "/contacts"} className="nav-link">
+                Contacts {location.pathname==="/contacts" && (<><span className="sr-only"> (current) </span></>)}
+            </Link>
         </li>
 
         <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <Link to="" className="nav-link dropdown-toggle" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Languages
-            </a>
+            </Link>
             <div className="dropdown-menu" aria-labelledby="languageSelector">
-                <a className="dropdown-item" href={
-                    address==="index.html" ? "index-ua.html" 
-                    : address==="portfolio.html" ? "../UA-files/portfolio-ua.html"
-                    : address==="wisdom.html" ? "../UA-files/wisdom-ua.html" 
-                    : address==="mystory.html" ? "../UA-files/mystory-ua.html"
-                    : address==="myinterests.html" ? "../UA-files/myinterests-ua.html"
-                    : "../UA-files/contacts-ua.html"
+                <Link className="dropdown-item" to={
+                      location.pathname==="/" ? "/index-ua" 
+                    : location.pathname==="/portfolio" ? "/portfolio-ua"
+                    : location.pathname==="/wisdom" ? "/wisdom-ua" 
+                    : location.pathname==="/story" ? "/story-ua"
+                    : location.pathname==="/interests" ? "/interests-ua"
+                    : location.pathname==="/contacts" ? "/contacts-ua"
+                    : ""
                 }>
-                <img className="flag-icon" src="./assets/Images/UA.png"/>
+                <img className="flag-icon" src="/assets/Images/UA.png"/>
                     Українська
-                </a>
-                <a className="dropdown-item" href="">
-                <img className="flag-icon" src="./assets/Images/US.png"/>
+                </Link>
+                <Link className="dropdown-item" to={
+                      location.pathname==="/index-ua" ? "/" 
+                    : location.pathname==="/portfolio-ua" ? "/portfolio"
+                    : location.pathname==="/wisdom-ua" ? "/wisdom" 
+                    : location.pathname==="/story-ua" ? "/story"
+                    : location.pathname==="/interests-ua" ? "/interests"
+                    : location.pathname==="/contacts-ua" ? "/contacts"
+                    : ""
+                }>
+                    <img className="flag-icon" src="/assets/Images/US.png"/>
                     English
-                </a>
+                </Link>
             </div>
         </li>
       </ul>
