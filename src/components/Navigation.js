@@ -1,12 +1,11 @@
 import React from 'react';
-import { useLocation } from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './nav-style.css';
 
-export default function Navigation() {
-  const location = useLocation();
+export default function Navigation({address}) {
+  
   return(
     <header>
     <Navbar variant="dark" expand="lg" id="menu">
@@ -39,21 +38,21 @@ export default function Navigation() {
           
         </Nav>
         <Nav.Item id="lang-choice">
-        <Nav.Link className="lang-choice" href={location.pathname==="/" ? "/index-ua" 
-          : location.pathname==="/portfolio" ? "/portfolio-ua"
-          : location.pathname==="/wisdom" ? "/wisdom-ua" 
-          : location.pathname==="/story" ? "/story-ua"
-          : location.pathname==="/interests" ? "/interests-ua"
-          : location.pathname==="/contacts" ? "/contacts-ua"
+        <Nav.Link className="lang-choice" href={address==="/" ? "/index-ua" 
+          : address==="/portfolio" ? "/portfolio-ua"
+          : address==="/wisdom" ? "/wisdom-ua" 
+          : address==="/story" ? "/story-ua"
+          : address==="/interests" ? "/interests-ua"
+          : address==="/contacts" ? "/contacts-ua"
           : undefined}>
           <img className="flag-icon" src="/assets/Images/UA.png" alt="UA-flag"/>
         </Nav.Link>
-        <Nav.Link className="lang-choice" href={location.pathname==="/index-ua" ? "/" 
-          : location.pathname==="/portfolio-ua" ? "/portfolio"
-          : location.pathname==="/wisdom-ua" ? "/wisdom" 
-          : location.pathname==="/story-ua" ? "/story"
-          : location.pathname==="/interests-ua" ? "/interests"
-          : location.pathname==="/contacts-ua" ? "/contacts"
+        <Nav.Link className="lang-choice" href={address==="/index-ua" ? "/" 
+          : address==="/portfolio-ua" ? "/portfolio"
+          : address==="/wisdom-ua" ? "/wisdom" 
+          : address==="/story-ua" ? "/story"
+          : address==="/interests-ua" ? "/interests"
+          : address==="/contacts-ua" ? "/contacts"
           : undefined}>
           <img className="flag-icon" src="/assets/Images/US.png" alt="US-flag"/>
         </Nav.Link>
