@@ -1,13 +1,15 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
 import Row from './Row.js';
-import Accordion from './Accordion.js';
+import AccordionFold from './AccordionFold.js';
+import './grid-style.css';
+import './accordion-style.css';
 
 export default function Article() {
   const location=useLocation();
   const address=location.pathname;
   return (
-    <div className="column2">
+    <article className="column2">
       {address==="/contacts" 
       ? 
       <Row type="dark" content="empty" name="row-in-col" innerText="&nbsp;" style={{width: 350 +'px'}} /> 
@@ -26,8 +28,8 @@ export default function Article() {
           address==="/contacts" && "How to Reach Me"
         }
       />
-      {(address==="index.html" || address==="portfolio.html") ? 
-      <>
+      {(address==="/" || address==="/portfolio") ? 
+      (<>
       <Row type="dark" 
         content={address==="/" ? "text-in-box" : "backend"} 
         alignment={address==="/" && "flex-column-center"} 
@@ -41,16 +43,21 @@ export default function Article() {
         content={address==="/" ? "showcase" : "frontend"} 
         showcase={address==="/" && "showcase-row"}
       />
-      </> 
-      : <Accordion />}
+      </>) 
+      : <AccordionFold 
+          id={
+            address==="/wisdom" ? "wisdom" :
+            address==="/story" ? "story" :
+            address==="/interests" ? "interests" : 
+            address==="/contacts" ? "contacts" : undefined
+          }
+        />}
       
       {address==="/" && 
         <><Row type="light" content="heading" name="skills" innerText="My Skills" />
         <Row type="dark" content="text-in-box"/></>}
 
-      {!(address==="/story") && !(address==="/contacts") && 
-        <Row type="light" content="empty" innerText="&nbsp;" />}
-    
-    </div>
+        <Row type="light" content="empty" innerText="&nbsp;" />   
+    </article>
   );
 }

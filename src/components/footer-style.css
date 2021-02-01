@@ -1,0 +1,15 @@
+/* Footer */
+body footer#myfoot {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: rgb(192, 57, 43)
+}
+
+#copyright, .copyright {
+    color: rgb(253, 186, 17);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}

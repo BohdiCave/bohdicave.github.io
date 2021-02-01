@@ -1,9 +1,11 @@
 import React from 'react';
+import './portfolio-style.css';
+import './link-style.css';
 
 export default function Project({content, name, heroku}) {
   return(  
     <figure className={ content==="backend" ? "project-column" 
-                      : content==="screenshot" && "screenshot-fig"}>
+                      : content==="screenshot" ? "screenshot-fig" : undefined}>
       { content==="frontend" ? 
         (
         <a href={ name==="front1" ? "https://bohdicave.github.io/StockUp" 
@@ -28,12 +30,12 @@ export default function Project({content, name, heroku}) {
             //     : name==="front6" && "CSS Fan page" } 
           />
           <figcaption>
-            { name==="front1" ? "AJAX-APIs: StockUp - Investment for Beginners"
-            : name==="front2" ? "AJAX, JSON and jQuery: OpenWeatherMap API"
-            : name==="front3" ? "jQuery: <br></br> Daily Scheduler"
-            : name==="front4" ? "JavaScript: <br></br> JS Password Generator"
-            : name==="front5" ? "JavaScript: <br></br> JS quiz"
-            : name==="front6" && "CSS: <br></br> Fan page" }
+            { name==="front1" ? (<>AJAX-APIs: StockUp - Investment for Beginners</>)
+            : name==="front2" ? (<>AJAX, JSON and jQuery: OpenWeatherMap API</>)
+            : name==="front3" ? (<>jQuery: <br></br> Daily Scheduler</>)
+            : name==="front4" ? (<>JavaScript <br></br> Password Generator</>)
+            : name==="front5" ? (<>JavaScript quiz</>)
+            : name==="front6" && (<>CSS: <br></br> Fan page</>) }
           </figcaption>
         </a>  
         )
@@ -56,12 +58,12 @@ export default function Project({content, name, heroku}) {
           //     : name==="back6" && "Node.js CLI app to generate READMEs" }
         />
         <figcaption>
-          { name==="back1" ? "FULL-STACK: MVC app <br></br> for finding gifts (MySQL, Node/Express/Handlebars)"
-          : name==="back2" ? "FULL-STACK: MVC app <br></br> for the gourmands (MySQL, Node/Express/Handlebars)"
-          : name==="back3" ? "Node.js: a CLI app <br></br> to manage employees (3-table MySQL database w/ CRUD)."
-          : name==="back4" ? "Express.js: <br></br> a simple yet fierce <br></br> note-taking app."
-          : name==="back5" ? "Node.js: a CLI app <br></br> to manage a team <br></br> (HTML generator)"
-          : name==="back6" && "Node.js: a CLI app <br></br> to generate good <br></br> README files" }
+          { name==="back1" ? (<>FULL-STACK: MVC app <br></br> for finding gifts <br></br> (MySQL, Node/Express/Handlebars)</>)
+          : name==="back2" ? (<>FULL-STACK: MVC app <br></br> for the gourmands <br></br>(MySQL, Node/Express/Handlebars)</>)
+          : name==="back3" ? (<>Node.js: a CLI app <br></br> to manage employees <br></br> (3-table MySQL database w/ CRUD).</>)
+          : name==="back4" ? (<>Express.js: <br></br> a simple yet fierce <br></br> note-taking app.</>)
+          : name==="back5" ? (<>Node.js: a CLI app <br></br> to manage a team <br></br> (HTML generator)</>)
+          : name==="back6" && (<>Node.js: a CLI app <br></br> to generate good <br></br> README files</>) }
         </figcaption>
         <div className="project-links">
           <a href={ 
@@ -85,35 +87,36 @@ export default function Project({content, name, heroku}) {
         )
       : content==="showcase" ?
         (
-        <a href={ name==="showcase1" ? "https://github.com/BohdiCave/WrappIt" 
-                : "https://github.com/BohdiCave/StockUp" }>
-          <img class="screenshot-img" 
-            src={ name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_screenshot.png" 
-                : "./assets/Images/Projects/Frontend/stockUp-mobile-screenshot.png" } 
-            alt={ name==="showcase1" ? "Screenshot of the WrappIt app" 
-                : "Screenshot of the mobile version" } 
-          />
-          <figcaption>
-            Collaborative repository on GitHub { name==="showcase1" && "(forked)" }
-          </figcaption>
-        </a>
-        )
-      : content==="screenshot" &&
-        (
           <a href={ name==="showcase1" ? "https://intense-falls-86763.herokuapp.com/" 
                   : "https://bohdicave.github.io/StockUp" }>
-            <img class="project" 
+            <img className="project" 
               src={ name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_saved-gifts_screenshot.png" 
                   : "./assets/Images/Projects/Frontend/AJAX-APIs-StockUp.png" } 
               alt={ name==="showcase1" ? "Full-stack MVC (Node-MySQL-Handlebars-Express) gift suggestions app" 
                   : "AJAX-API investment info for beginners"}
             />
-            <figcaption>
+          <figcaption>
                 <strong>{ name==="showcase1" ? "WrappIt:" : "StockUp:" }</strong> 
                 { name==="showcase1" ? 
                   "Gift suggestions. Full-stack Node-Express.js app with MVC architecture (MySQL/Sequelize)" 
                 : "Investment for Beginners. Mobile-first project on AJAX-APIs" }
             </figcaption>
+        </a>
+        )
+      : content==="screenshot" &&
+        (
+          <a href={ name==="showcase1" ? "https://github.com/BohdiCave/WrappIt" 
+                : "https://github.com/BohdiCave/StockUp" }>
+            <img className="screenshot-img" 
+              src={ name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_screenshot.png" 
+                : "./assets/Images/Projects/Frontend/stockUp-mobile-screenshot.png" } 
+              alt={ name==="showcase1" ? "Screenshot of the WrappIt app" 
+                : "Screenshot of the mobile version" } 
+            />
+             <figcaption>
+            Collaborative repository on GitHub { name==="showcase1" && "(forked)" }
+          </figcaption>
+           
           </a>
         )
       }

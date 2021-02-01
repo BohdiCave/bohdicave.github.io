@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Navbar from './components/Navbar';
+import Navigation from './components/Navigation';
 import Container from './components/Container';
 import Footer from './components/Footer';
 
@@ -24,44 +24,32 @@ export default function App() {
     <Router>
       <Switch>
         <Route path="/">
-          <header>
-            <Navbar />
-          </header>
+          <Navigation />
           <Container />
           <Footer/>      
         </Route>
         <Route path="/portfolio">
-          <header>
-            <Navbar />
-          </header>
+          <Navigation />
           <Container />
           <Footer/>
         </Route>
         <Route path="/wisdom">
-          <header>
-            <Navbar />
-          </header>
+          <Navigation />
           <Container />
           <Footer/>
         </Route>
         <Route path="/story">
-          <header>
-            <Navbar />
-          </header>
+          <Navigation />
           <Container />
           <Footer/>
         </Route>
         <Route path="/interests">
-          <header>
-            <Navbar />
-          </header>
+          <Navigation />
           <Container />
           <Footer/>
         </Route>
         <Route path="/contacts">
-          <header>
-            <Navbar />
-          </header>
+          <Navigation />
           <Container />
           <Footer/>
         </Route>

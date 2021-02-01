@@ -1,0 +1,50 @@
+/* Links */
+.flex-column-center { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.back-to-top { 
+    text-align: center; 
+    font-size: 16px; 
+    color: rgb(253, 186, 17);
+}
+
+.bottom-10 { 
+    margin-bottom: 10px; 
+}
+
+body a { 
+    text-decoration-line: none; 
+    text-align: center; 
+}
+body a:hover { 
+    text-decoration-line: underline; 
+    color: rgb(253, 186, 17); 
+}
+
+a#github-profile, 
+a#linkedin-profile, 
+#contact-info, 
+#resume { 
+    color: #ccc; 
+}
+
+.showcase a {
+    color: rgb(253, 186, 17);
+}
+
+.project-column a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(253, 186, 17);
+}
+
+.project-column a:hover { 
+    text-decoration-line: underline; 
+}
+
+.project-links { 
+    padding-bottom: 10px; 
+}

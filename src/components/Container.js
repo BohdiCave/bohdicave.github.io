@@ -1,14 +1,15 @@
 import React from 'react';
 import Aside from './Aside.js';
 import Article from './Article.js';
+import './grid-style.css';
 
 export default function Container() {
   return (
-    <div className="container">
-      <main className="row">
+    <main className="container">
+      <section className="row">
         <Aside />
         <Article />
-      </main>
-    </div>
+      </section>
+    </main>
   );  
 }

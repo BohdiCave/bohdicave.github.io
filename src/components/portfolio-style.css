@@ -1,0 +1,50 @@
+/* Showcase and Portfolio */
+
+div.showcase {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+div figure {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+figcaption {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(236, 240, 241);
+    padding: 10px;
+}
+
+.project-column {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screenshot-fig {
+    flex: 1 0 auto;
+}
+
+/* Images */
+img {
+    width: 70%;
+    height: auto;
+    margin: 20px 0px; 
+    border-radius: 25px;
+}
+
+img.project {
+    width: 150px;
+    height: 150px;
+}
+.screenshot-img {
+    width: 90%;
+}

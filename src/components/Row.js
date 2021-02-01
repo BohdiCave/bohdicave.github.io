@@ -3,6 +3,7 @@ import ShowcaseDiv from './ShowcaseDiv.js';
 import Table from './Table.js';
 import LinkTop from './LinkTop.js';
 import Project from './Project.js';
+import './grid-style.css';
 
 export default function Row({type, content, name, innerText, style, alignment, showcase}) {
   

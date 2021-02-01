@@ -1,6 +1,7 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
 import Contacts from './Contacts.js';
+import './grid-style.css';
 
 export default function Aside() {
 

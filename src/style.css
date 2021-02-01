@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+    border: 0;
+    background-color: rgb(236, 240, 241);
+}
+/* Media queries for multiple device responsiveness */
+    @media screen and (max-width: 768px) {
+        /* main section.row {display: flex; flex-direction: row;} */
+        aside.column1 {flex: 0 1 30%;}
+        article.column2 {flex: 1 0 40%;}
+        div h1, div h2 {font-size: 24px;}
+        .row .portfolio-row {display: flex; flex-direction: row; justify-content: center;}
+        figure {width: 50%;}
+    }
+
+    @media screen and (max-width: 400px) {
+        a#github-profile, 
+        a#linkedin-profile,
+        a#contact-info,
+        a.copyright {text-decoration: underline;}
+        aside.column1 {margin-left: 15px; margin-right: -15px;}
+        article.column2 {align-items: center;}
+        div figure {width: 100%;}    
+        section.row {display: flex; flex-direction: column; justify-content: center;}   
+        div.row.row-in-col.portfolio-row {display: flex; flex-direction: column; justify-content: center;}
+        .project-column {width: auto;}
+        div.showcase {display: flex; flex-direction: column; justify-content: flex-start;}
+    }

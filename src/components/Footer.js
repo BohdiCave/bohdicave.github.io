@@ -1,11 +1,13 @@
 import React from 'react';
+import './footer-style.css';
+import './link-style.css';
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id="myfoot">
       <p id="copyright">
         2020 &copy; 
-        <a class="copyright" href="https://github.com/BohdiCave" target="new">
+        <a className="copyright" href="https://github.com/BohdiCave" target="new">
           Bohdan Pechenyak
         </a>
       </p>
