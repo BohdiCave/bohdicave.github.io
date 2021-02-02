@@ -1,16 +1,12 @@
 import React from "react";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navigation from './components/Navigation';
-import Container from './components/Container';
-import Footer from './components/Footer';
-
-// import Home from './pages/Home';
-// import Portfolio from './pages/Portfolio';
-// import Wisdom from './pages/Wisdom';
-// import Story from './pages/Story';
-// import Interests from './pages/Interests';
-// import Contacts from './pages/Contacts';
+import Home from './components/pages/Home';
+import Portfolio from './components/pages/Portfolio';
+import Wisdom from './components/pages/Wisdom';
+import Story from './components/pages/Story';
+import Interests from './components/pages/Interests';
+import Contacts from './components/pages/Contacts';
 
 // import HomeUA from './pages/Home-ua';
 // import PortfolioUA from './pages/Portfolio-ua';
@@ -20,104 +16,15 @@ import Footer from './components/Footer';
 // import ContactsUA from './pages/Contacts-ua';
 
 export default function App() {
-  // const Home = () => {
-  //   return(
-  //   <div>
-  //   <Navigation address="/" />
-  //   <Container />
-  //   <Footer/>
-  //   </div>)
-  // }
-  // const Portfolio = () => {
-  //   return(
-  //   <>
-  //   <Navigation address="/portfolio" />
-  //   <Container />
-  //   <Footer/>
-  //   </>
-  //   );
-  // }
-  // const Wisdom = () => {
-  //   return(
-  //   <>
-  //   <Navigation address="/wisdom" />
-  //   <Container />
-  //   <Footer/>
-  //   </>
-  //   );
-  // }
-  // const Story = () => {
-  //   return(
-  //   <>
-  //   <Navigation address="/story" />
-  //   <Container />
-  //   <Footer/>  
-  //   </>
-  //   )
-  // }
-  // const Interests = () => {
-  //   return(
-  //   <>
-  //   <Navigation address="/interests" />
-  //   <Container />
-  //   <Footer/>  
-  //   </>
-  //   )
-  // }
-  // const Contacts = () => {
-  //   return(
-  //   <>
-  //   <Navigation address="/contacts" />
-  //   <Container />
-  //   <Footer/>  
-  //   </>
-  //   )
-  // }
   return (
     <Router>
       <Switch>
-        <Route exact path="/" render={props => (
-          <>
-          <Navigation address={props} />
-          <Container />
-          <Footer />
-          </>
-        )}/>
-        <Route exact path="/portfolio" render={props => (
-          <>
-          <Navigation address={props} />
-          <Container />
-          <Footer />
-          </>
-        )}/>
-        <Route exact path="/wisdom" render={props => (
-          <>
-          <Navigation address={props} />
-          <Container />
-          <Footer />
-          </>
-        )} />
-        <Route exact path="/story" render={props => (
-          <>
-          <Navigation address={props} />
-          <Container />
-          <Footer />
-          </>
-        )}/>
-        <Route exact path="/interests" render={props => (
-          <>
-          <Navigation address={props} />
-          <Container />
-          <Footer />
-          </>
-        )}/>
-        <Route exact path="/contacts" render={props => (
-          <>
-          <Navigation address={props} />
-          <Container />
-          <Footer />
-          </>
-        )}/>
+        <Route exact path="/" component={Home}/>
+        <Route exact path="/portfolio" component={Portfolio}/>
+        <Route exact path="/wisdom" render={Wisdom} />
+        <Route exact path="/story" render={Story}/>
+        <Route exact path="/interests" render={Interests}/>
+        <Route exact path="/contacts" render={Contacts}/>
       </Switch>  
   
         {/* <Route exact path="/" component={Home} />
