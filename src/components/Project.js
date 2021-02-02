@@ -1,8 +1,11 @@
 import React from 'react';
-import './portfolio-style.css';
-import './link-style.css';
+import {useLocation} from 'react-router-dom';
+import './styles/portfolio-style.css';
+import './styles/link-style.css';
 
 export default function Project({content, name, heroku}) {
+  const location = useLocation();
+  const address = location.pathname;
   return(  
     <figure className={ content==="backend" ? "project-column" 
                       : content==="screenshot" ? "screenshot-fig" : undefined}>
@@ -30,12 +33,21 @@ export default function Project({content, name, heroku}) {
             //     : name==="front6" && "CSS Fan page" } 
           />
           <figcaption>
-            { name==="front1" ? (<>AJAX-APIs: StockUp - Investment for Beginners</>)
+            {address==="/portfolio" ? (
+              name==="front1" ? (<>AJAX-APIs: StockUp - Investment for Beginners</>)
             : name==="front2" ? (<>AJAX, JSON and jQuery: OpenWeatherMap API</>)
             : name==="front3" ? (<>jQuery: <br></br> Daily Scheduler</>)
             : name==="front4" ? (<>JavaScript <br></br> Password Generator</>)
             : name==="front5" ? (<>JavaScript quiz</>)
-            : name==="front6" && (<>CSS: <br></br> Fan page</>) }
+            : name==="front6" && (<>CSS: <br></br> Fan page</>)
+            ) : (
+              name==="front1" ? (<>AJAX-API: StockUp - Інвестиції для початківців</>)
+            : name==="front2" ? (<>AJAX, JSON та jQuery: Прогноз погоди (OpenWeatherMap API)</>)
+            : name==="front3" ? (<>jQuery: <br></br> Щоденний розклад</>)
+            : name==="front4" ? (<>JavaScript <br></br> Ґенератор паролів </>)
+            : name==="front5" ? (<>Опитник JavaScript</>)
+            : name==="front6" && (<>CSS: <br></br> Fan page</>)
+            )}
           </figcaption>
         </a>  
         )
@@ -58,12 +70,21 @@ export default function Project({content, name, heroku}) {
           //     : name==="back6" && "Node.js CLI app to generate READMEs" }
         />
         <figcaption>
-          { name==="back1" ? (<>FULL-STACK: MVC app <br></br> for finding gifts <br></br> (MySQL, Node/Express/Handlebars)</>)
+          {address==="/portfolio" ? ( 
+            name==="back1" ? (<>FULL-STACK: MVC app <br></br> for finding gifts <br></br> (MySQL, Node/Express/Handlebars)</>)
           : name==="back2" ? (<>FULL-STACK: MVC app <br></br> for the gourmands <br></br>(MySQL, Node/Express/Handlebars)</>)
           : name==="back3" ? (<>Node.js: a CLI app <br></br> to manage employees <br></br> (3-table MySQL database w/ CRUD).</>)
           : name==="back4" ? (<>Express.js: <br></br> a simple yet fierce <br></br> note-taking app.</>)
           : name==="back5" ? (<>Node.js: a CLI app <br></br> to manage a team <br></br> (HTML generator)</>)
-          : name==="back6" && (<>Node.js: a CLI app <br></br> to generate good <br></br> README files</>) }
+          : name==="back6" && (<>Node.js: a CLI app <br></br> to generate good <br></br> README files</>) 
+          ) : (
+            name==="back1" ? (<>КОМПЛЕКСНО: <br></br> додаток MVC <br></br> для пошуку подарунків <br></br> (MySQL, Node/Express/Handlebars)</>)
+          : name==="back2" ? (<>КОМПЛЕКСНО: <br></br> додаток MVC <br></br> для гурманів <br></br>(MySQL, Node/Express/Handlebars)</>)
+          : name==="back3" ? (<>Node.js: CLI додаток <br></br> для управління працівниками <br></br> (3-таблична база даних MySQL з CRUD).</>)
+          : name==="back4" ? (<>Express.js: <br></br> простий та сердитий <br></br> додаток для нотаток.</>)
+          : name==="back5" ? (<>Node.js: CLI додаток <br></br> управління командою <br></br> (ґенератор HTML)</>)
+          : name==="back6" && (<>Node.js: CLI додаток <br></br> ґенерування зразкових <br></br> README файлів </>)
+          )}
         </figcaption>
         <div className="project-links">
           <a href={ 
@@ -92,14 +113,23 @@ export default function Project({content, name, heroku}) {
             <img className="project" 
               src={ name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_saved-gifts_screenshot.png" 
                   : "./assets/Images/Projects/Frontend/AJAX-APIs-StockUp.png" } 
-              alt={ name==="showcase1" ? "Full-stack MVC (Node-MySQL-Handlebars-Express) gift suggestions app" 
-                  : "AJAX-API investment info for beginners"}
+              alt={ address==="/" ? ( 
+                    name==="showcase1" ? "Full-stack MVC (Node-MySQL-Handlebars-Express) gift suggestions app" 
+                  : "AJAX-API investment info for beginners") : (
+                    name==="showcase1" ? "Комплексний додаток MVC (Node-MySQL-Handlebars-Express) для пошуку ідеального подарунка"
+                  : "Додаток AJAX-API - інформація для інвесторів-початківців"
+                  )}
             />
           <figcaption>
                 <strong>{ name==="showcase1" ? "WrappIt:" : "StockUp:" }</strong> 
-                { name==="showcase1" ? 
+                { address==="/" ? (
+                  name==="showcase1" ? 
                   "Gift suggestions. Full-stack Node-Express.js app with MVC architecture (MySQL/Sequelize)" 
-                : "Investment for Beginners. Mobile-first project on AJAX-APIs" }
+                : "Investment for Beginners. Mobile-first project on AJAX-APIs") : (
+                  name==="showcase1" ? 
+                  "Пошук подарунків. Комплексний додаток Node-Express.js з архітектурою MVC (MySQL/Sequelize)"
+                : "Інвестиції для початківців. Додаток AJAX-API з фокусом на мобільні пристрої"
+                )}
             </figcaption>
         </a>
         )
@@ -110,11 +140,16 @@ export default function Project({content, name, heroku}) {
             <img className="screenshot-img" 
               src={ name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_screenshot.png" 
                 : "./assets/Images/Projects/Frontend/stockUp-mobile-screenshot.png" } 
-              alt={ name==="showcase1" ? "Screenshot of the WrappIt app" 
-                : "Screenshot of the mobile version" } 
+              alt={ address==="/" ? (
+                name==="showcase1" ? "Screenshot of the WrappIt app" 
+              : "Screenshot of the mobile version") : (
+                name==="showcase1" ? "Кадр екрану додатка WrappIt"
+              : "Кадр екрану мобільної версії"
+              )} 
             />
              <figcaption>
-            Collaborative repository on GitHub { name==="showcase1" && "(forked)" }
+            {address==="/" ? (<>Collaborative repository on GitHub { name==="showcase1" && "(forked)" }</>)
+            : (<>Колаборативний репозиторій на GitHub {name==="showcase1" && "(відгалуження)"}</>)}
           </figcaption>
            
           </a>

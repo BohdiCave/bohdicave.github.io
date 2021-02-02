@@ -1,21 +1,24 @@
 import React from 'react';
-import './link-style.css';
+import {useLocation} from 'react-router-dom';
+import './styles/link-style.css';
 
-export default function LinkTop({type, padbottom}) {    
+export default function LinkTop({type, padbottom}) {
+    const location = useLocation();
+    const address = location.pathname;    
     return(
         <>
         {type==="div" ? 
             (
             <div className="flex-column-center">
                 <a className={`back-to-top ${padbottom}`} href="#menu">
-                    (back to menu)
+                    {(address==="/" || address==="/portfolio") ? "(back to menu)" : "(до меню)"}
                 </a>
             </div>
             )
         : type==="anchor" && 
             (
             <a className="back-to-top" href="#menu">
-                (back to menu)
+                {(address==="/" || address==="/portfolio") ? "(back to menu)" : "(до меню)"}
             </a>
             )
         }
