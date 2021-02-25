@@ -5,15 +5,15 @@ A bilingual (English/Ukrainian) GitHub portfolio page powered by React.js, inclu
 Showcasing a portfolio of projects using:
 
 * HTML, CSS, Javascript
-    * semantic HTML web pages
-    * styled with CSS3, literally deployed in figuratively cascading levels of 
+  * semantic HTML web pages
+  * styled with CSS3, literally deployed in figuratively cascading levels of 
         a. Bootstrap, Milligram.io and other frameworks,
         b. own styles, and
         c. occasional inline CSS
-    * powered by JS (React.js framework)
+  * powered by JS (React.js framework)
 * Includes various projects 
-    * frontend (weather dashboard, investment research, password generator, JS quiz) 
-    * backend/full-stack (CLI-based apps, HTML and README generators, and full-stack projects using MySQL or MongoDB and Node-Express.js servers)
+  * frontend (weather dashboard, investment research, password generator, JS quiz) 
+  * backend/full-stack (CLI-based apps, HTML and README generators, and full-stack projects using MySQL or MongoDB and Node-Express.js servers)
 
 ## Link
 
