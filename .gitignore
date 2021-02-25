@@ -1,3 +1,5 @@
 node_modules
 /auxiliary
 /build
+/src
+/public
