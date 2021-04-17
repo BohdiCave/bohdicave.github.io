@@ -1,7 +1,7 @@
 import React from 'react';
 import Aside from './Aside.js';
 import Article from './Article.js';
-import './styles/grid-style.css';
+import '../styles/grid-style.css';
 
 export default function Container() {
   return (

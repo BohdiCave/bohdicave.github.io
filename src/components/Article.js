@@ -2,8 +2,8 @@ import React from 'react';
 import {useLocation} from 'react-router-dom';
 import Row from './Row.js';
 import AccordionFold from './AccordionFold.js';
-import './styles/grid-style.css';
-import './styles/accordion-style.css';
+import '../styles/grid-style.css';
+import '../styles/accordion-style.css';
 
 export default function Article() {
   const location=useLocation();

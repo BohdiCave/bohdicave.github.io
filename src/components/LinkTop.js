@@ -1,6 +1,6 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
-import './styles/link-style.css';
+import '../styles/link-style.css';
 
 export default function LinkTop({type, padbottom}) {
     const location = useLocation();

@@ -1,19 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Home from './components/pages/Home';
-import Portfolio from './components/pages/Portfolio';
-import Wisdom from './components/pages/Wisdom';
-import Story from './components/pages/Story';
-import Interests from './components/pages/Interests';
-import Contacts from './components/pages/Contacts';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Wisdom from './pages/Wisdom';
+import Story from './pages/Story';
+import Interests from './pages/Interests';
+import Contacts from './pages/Contacts';
 
-import HomeUA from './components/pages/Home-ua';
-import PortfolioUA from './components/pages/Portfolio-ua';
-import WisdomUA from './components/pages/Wisdom-ua';
-import StoryUA from './components/pages/Story-ua';
-import InterestsUA from './components/pages/Interests-ua';
-import ContactsUA from './components/pages/Contacts-ua';
+import HomeUA from './pages/Home-ua';
+import PortfolioUA from './pages/Portfolio-ua';
+import WisdomUA from './pages/Wisdom-ua';
+import StoryUA from './pages/Story-ua';
+import InterestsUA from './pages/Interests-ua';
+import ContactsUA from './pages/Contacts-ua';
 
 export default function App() {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import './styles/nav-style.css';
+import '../styles/nav-style.css';
 
 export default function Navigation({address}) {
   return(
@@ -23,21 +23,21 @@ export default function Navigation({address}) {
             ? 
             (<Nav className="mr-auto">
               <NavDropdown title="Домашня" id="basic-nav-dropdown">              
-                <NavDropdown.Item href={address==="/home-ua" ? "/#mission" : "/home-ua#mission"}>
+                <NavDropdown.Item href="/home-ua#mission">
                   Місія та візія           
                 </NavDropdown.Item>
-                <NavDropdown.Item href={address==="/home-ua" ? "/#showcase" : "/home-ua#showcase"}>
+                <NavDropdown.Item href="/home-ua#showcase">
                   Показові проєкти
                 </NavDropdown.Item>
-                <NavDropdown.Item href={address==="/home-ua" ? "/#skills" : "/home-ua#skills"}>
+                <NavDropdown.Item href="/home-ua#skills">
                   Вміння
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Портфель" id="basic-nav-dropdown">
-                <NavDropdown.Item href={address==="/portfolio-ua" ? "/#backend" : "/portfolio-ua#backend"}>
+                <NavDropdown.Item href="/portfolio-ua#backend">
                   Серверні (backend) та комплексні проєкти 
                 </NavDropdown.Item>
-                <NavDropdown.Item href={address==="/portfolio-ua" ? "/#frontend" : "/portfolio-ua#frontend"}>
+                <NavDropdown.Item href="/portfolio-ua#frontend">
                   Клієнтні (frontend) проєкти
                 </NavDropdown.Item>
               </NavDropdown>
@@ -71,7 +71,7 @@ export default function Navigation({address}) {
                 <NavDropdown.Item href={address==="/portfolio" ? "#backend" : "/portfolio#backend"}>
                   Backend/Full-stack projects
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/#showcase">
+                <NavDropdown.Item href={address==="/portfolio" ? "#frontend" : "/portfolio#frontend"}>
                   Frontend projects
                 </NavDropdown.Item>
               </NavDropdown>

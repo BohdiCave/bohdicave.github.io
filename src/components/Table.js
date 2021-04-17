@@ -1,6 +1,6 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
-import './styles/tab-style.css';
+import '../styles/tab-style.css';
 
 export default function Table({type}) {
   const location = useLocation();

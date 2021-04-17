@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Navigation from '../Navigation';
-import Container from '../Container';
-import Footer from '../Footer';
+import Navigation from '../components/Navigation';
+import Container from '../components/Container';
+import Footer from '../components/Footer';
 
 export default function StoryUA() {
     return(

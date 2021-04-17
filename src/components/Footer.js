@@ -1,7 +1,7 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
-import './styles/footer-style.css';
-import './styles/link-style.css';
+import '../styles/footer-style.css';
+import '../styles/link-style.css';
 
 export default function Footer() {
   const location = useLocation();

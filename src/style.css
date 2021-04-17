@@ -22,9 +22,9 @@ body {
         a#contact-info,
         a.copyright {text-decoration: underline;}
         aside.column1 {margin-left: 15px; margin-right: -15px;}
-        article.column2 {align-items: center;}
+        article.column2 {margin-right: -38px; align-items: center; }
         div figure {width: 100%;}    
-        section.row {display: flex; flex-direction: column; justify-content: center;}   
+        section.row {display: flex; flex-direction: column; justify-content: center; width: 100%;}   
         div.row.row-in-col.portfolio-row {display: flex; flex-direction: column; justify-content: center;}
         .project-column {width: auto;}
         div.showcase {display: flex; flex-direction: column; justify-content: flex-start;}

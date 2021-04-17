@@ -1,7 +1,7 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
-import './styles/portfolio-style.css';
-import './styles/link-style.css';
+import '../styles/portfolio-style.css';
+import '../styles/link-style.css';
 
 export default function Project({content, name, heroku}) {
   const location = useLocation();
@@ -108,48 +108,65 @@ export default function Project({content, name, heroku}) {
         )
       : content==="showcase" ?
         (
-          <a href={ name==="showcase1" ? "https://intense-falls-86763.herokuapp.com/" 
+          <a href={ name==="showcase0" ? "https://young-chamber-12240.herokuapp.com" 
+                  : name==="showcase1" ? "https://intense-falls-86763.herokuapp.com/" 
                   : "https://bohdicave.github.io/StockUp" }>
             <img className="project" 
-              src={ name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_saved-gifts_screenshot.png" 
+              src={ name==="showcase0" ? "./assets/Images/Projects/Backend/lost-horse-press_screenshot.png" 
+                  : name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_saved-gifts_screenshot.png" 
                   : "./assets/Images/Projects/Frontend/AJAX-APIs-StockUp.png" } 
               alt={ address==="/" ? ( 
-                    name==="showcase1" ? "Full-stack MVC (Node-MySQL-Handlebars-Express) gift suggestions app" 
-                  : "AJAX-API investment info for beginners") : (
-                    name==="showcase1" ? "Комплексний додаток MVC (Node-MySQL-Handlebars-Express) для пошуку ідеального подарунка"
+                    name==="showcase0" ? "Full-stack MVC MERN (MySQL-Express-React/Redux-Node) app - independent poetry press website" 
+                  : name==="showcase1" ? "Full-stack MVC (Node-MySQL-Handlebars-Express) gift suggestions app" 
+                  : "AJAX-API investment info for beginners"
+              ) : address==="/home-ua" ? (
+                    name==="showcase0" ? "Комплексний додаток MVC MERN (MySQL-Express-React/Redux-Node) - вебсайт незалежного видавця поезії"
+                  : name==="showcase1" ? "Комплексний додаток MVC (Node-MySQL-Handlebars-Express) для пошуку ідеального подарунка"
                   : "Додаток AJAX-API - інформація для інвесторів-початківців"
-                  )}
+                  ) : "Error - Помилка"}
             />
           <figcaption>
-                <strong>{ name==="showcase1" ? "WrappIt:" : "StockUp:" }</strong> 
+                <strong>{ name==="showcase0" ? "Lost Horse Press website: " : 
+                          name==="showcase1" ? "WrappIt: " : "StockUp: " }</strong> 
                 { address==="/" ? (
-                  name==="showcase1" ? 
+                  name==="showcase0" ? 
+                  "Independent publishing. Full-stack MERN app with MVC architecture using React/Redux"
+                : name==="showcase1" ? 
                   "Gift suggestions. Full-stack Node-Express.js app with MVC architecture (MySQL/Sequelize)" 
-                : "Investment for Beginners. Mobile-first project on AJAX-APIs") : (
-                  name==="showcase1" ? 
-                  "Пошук подарунків. Комплексний додаток Node-Express.js з архітектурою MVC (MySQL/Sequelize)"
-                : "Інвестиції для початківців. Додаток AJAX-API з фокусом на мобільні пристрої"
+                : "Investment for Beginners. Mobile-first project on AJAX-APIs"
+                ) : (
+                  name==="showcase0" ? 
+                  "Незалежне видавництво. Комплексний застосунок MERN з архітектурою MVC на основі лаштунків React та Redux"
+                : name==="showcase1" ? 
+                  "Пошук подарунків. Комплексний застосунок Node-Express.js з архітектурою MVC (MySQL/Sequelize)"
+                : "Інвестиції для початківців. Застосунок AJAX-API з фокусом на мобільні пристрої"
                 )}
             </figcaption>
         </a>
         )
       : content==="screenshot" &&
         (
-          <a href={ name==="showcase1" ? "https://github.com/BohdiCave/WrappIt" 
-                : "https://github.com/BohdiCave/StockUp" }>
+          <a href={ name==="showcase0" ? "https://github.com/BohdiCave/lost-horse-press" 
+                  : name==="showcase1" ? "https://github.com/BohdiCave/WrappIt" 
+                  : "https://github.com/BohdiCave/StockUp" }>
             <img className="screenshot-img" 
-              src={ name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_screenshot.png" 
-                : "./assets/Images/Projects/Frontend/stockUp-mobile-screenshot.png" } 
+              src={ name==="showcase0" ? "./assets/Images/Projects/Backend/lost-horse-press_showcase.png"
+                  : name==="showcase1" ? "./assets/Images/Projects/Backend/wrappit_screenshot.png" 
+                  : "./assets/Images/Projects/Frontend/stockUp-mobile-screenshot.png" } 
               alt={ address==="/" ? (
-                name==="showcase1" ? "Screenshot of the WrappIt app" 
+                name==="showcase0" ? "Screenshot of the Lost Horse Press website" 
+              : name==="showcase1" ? "Screenshot of the WrappIt app" 
               : "Screenshot of the mobile version") : (
-                name==="showcase1" ? "Кадр екрану додатка WrappIt"
+                name==="showcase0" ? "Кадр екрану вебсайту видавництва 'Загублений кінь'"
+              : name==="showcase1" ? "Кадр екрану застосунка WrappIt"
               : "Кадр екрану мобільної версії"
               )} 
             />
              <figcaption>
-            {address==="/" ? (<>Collaborative repository on GitHub { name==="showcase1" && "(forked)" }</>)
-            : (<>Колаборативний репозиторій на GitHub {name==="showcase1" && "(відгалуження)"}</>)}
+            {address==="/" ? (name==="showcase0" ? "Repository on GitHub" 
+            : <>Collaborative repository on GitHub { name==="showcase1" && "(forked)" }</>)
+            : (name==="showcase0" ? "Репозиторій на GitHub" 
+            : <>Колаборативний репозиторій на GitHub {name==="showcase1" && "(відгалуження)"}</>)}
           </figcaption>
            
           </a>

@@ -68,3 +68,16 @@ div.navbar-nav:hover {
 .flag-icon:hover {
     width: 35px;
 }
+
+@media screen and (max-width: 400px) {
+    #basic-navbar-nav {
+        margin-left: 0;
+    }
+    div.navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #lang-choice {
+        justify-content: flex-end;
+    }
+}

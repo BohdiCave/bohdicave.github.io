@@ -3,7 +3,7 @@ import {useLocation} from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import './styles/accordion-style.css';
+import '../styles/accordion-style.css';
 
 export default function AccordionFold({id}) {
   const location = useLocation();
@@ -90,7 +90,7 @@ export default function AccordionFold({id}) {
               : (<><strong>Формальна освіта - соціологія</strong> (бакалаврат, B.A.) та соціальна робота (маґістратура, M.S.W.)</>)}
             </ListGroup.Item>
             <ListGroup.Item>
-              {address==="/wisdom" ? (<><strong>Despite being an émigré, I "lived through" the two recent revolutions in Ukraine</strong> - Orange (2004-05) and Dignity (2013-14). That struggle is not over, as the Russian aggression in Eastern Ukraine and illegally occupied Crimea continues.</>)
+              {address==="/story" ? (<><strong>Despite being an émigré, I "lived through" the two recent revolutions in Ukraine</strong> - Orange (2004-05) and Dignity (2013-14). That struggle is not over, as the Russian aggression in Eastern Ukraine and illegally occupied Crimea continues.</>)
               : (<><strong>Будучи емігрантом, "пережив" дві нещодавні революції в Україні</strong> - Помаранчеву (2004-05) та Гідності (2013-14). Боротьбa продовжується, оскільки російська окупація східної України та незаконна окупація Криму ще триває.</>)}
             </ListGroup.Item>
           </ListGroup>)

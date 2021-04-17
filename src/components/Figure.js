@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './Project.js';
-import './styles/portfolio-style.css';
+import '../styles/portfolio-style.css';
 
 export default function Figure({name}) {
     return(
