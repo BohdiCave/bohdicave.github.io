@@ -17,15 +17,15 @@ export default function Table({type}) {
         </tr>
         <tr>
           <th>{address==="/" ? "Backend:" : "Сервер (backend)"}</th>
-          <td>{address==="/" ? "MERN stack (MongoDB/Mongoose.js, Express.js, React.js, Node.js), including npm, Handlebars.js, Sequelize.js and other JS libraries and frameworks), xAMPP stack (PHP, MySQL), Heroku/JawsDB, MongoDB Atlas, WordPress" : "Комплекс MERN (MongoDB/Mongoose.js, Express.js, React.js, Node.js), в тому числі npm, Handlebars.js, Sequelize.js та низка програмних пакетів та бібліотек; комплекс xAMPP (PHP, MySQL), Heroku/JawsDB, MongoDB Atlas, WordPress"}</td>
+          <td>{address==="/" ? "MERN stack (MongoDB/Mongoose.js, Express.js, React.js/Vue.js, Node.js), including npm, Handlebars.js, Sequelize.js, Next.js/Nuxt.js, and other JS libraries and frameworks), LAMP stack (Linux, Apache, MySQL, PHP) and related frameworks (Laravel, CodeIgniter, WordPress), Heroku/JawsDB, MongoDB Atlas" : "Комплекс MERN (MongoDB/Mongoose.js, Express.js, React.js/Vue.js, Node.js), в тому числі npm, Handlebars.js, Sequelize.js, Next.js/Nuxt.js та низка JS лаштунків та бібліотек; комплекс LAMP (Linux, Apache, MySQL, PHP) та дотичні лаштунки (Laravel, CodeIgniter, WordPress), Heroku/JawsDB, MongoDB Atlas"}</td>
         </tr>
         <tr>
           <th>{address==="/" ? "Learning:" : "Зараз навчаюся:"}</th>
-          <td>{address==="/" ? "xAMPP stack (Apache, MariaDB, PHP-8, Perl, Laravel)" : "Комплекс xAMPP (Apache, MariaDB, PHP-8, Perl, Laravel)"}</td>
+          <td>{address==="/" ? "Additional elements of the LAMP stack (MariaDB, PHP 8), Amazon Web Services, containerization and orchestration - Docker and Kubernetes" : "Додаткові елементи комплексу LAMP (MariaDB, PHP-8), AWS - веб послуги Амазон, контейнери та їх оркестрація - Docker та Kubernetes"}</td>
         </tr>
         <tr className="last">
           <th>{address==="/" ? "Intend to explore:" : "Маю намір вивчити:"}</th>
-          <td className="last">Java, Python, R, С/C++, C#, {address==="/" ? "mobile development" : "розробка мобільних додатків"} (React Native/Swift/Flutter/Kotlin...), {address==="/" ? "data science and visualization" : "дані та їх візуалізація"} (GIS, D3.js, Chart.js...), {address==="/" ? "cybersecurity, and more..." : "кібербезпека тощо..."}</td>
+          <td className="last">Java, Python, R, С/C++, C#, {address==="/" ? "mobile development" : "розробка мобільних додатків"} (React Native/Swift/Flutter/Kotlin...), {address==="/" ? "data science and visualization" : "дані та їх візуалізація"} (GIS, D3.js, Chart.js...), {address==="/" ? "networking / cybersecurity, and more..." : "адміністрація мереж / кібербезпека тощо..."}</td>
         </tr>
         </tbody>
       </table>

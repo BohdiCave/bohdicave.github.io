@@ -28,7 +28,17 @@ a#github-profile,
 a#linkedin-profile, 
 #contact-info, 
 #resume { 
-    color: #ccc; 
+    color: rgb(253, 186, 17); 
+}
+
+#resume {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a#github-profile:hover, 
+a#linkedin-profile:hover {
+    font-size: 20px;
 }
 
 .showcase a {
