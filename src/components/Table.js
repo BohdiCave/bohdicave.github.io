@@ -41,7 +41,7 @@ export default function Table({type}) {
         </tr>
         <tr>
           <th>Vision:</th>
-          <td>A web developer with a background in social science and a passion for arts and humanities, aiming to create an aesthetically pleasing, socially meaningful, and functionally accessible user experience on the web. I tend to focus on fully responsive, mobile-first, and accessible design and development.</td>
+          <td>A web developer with a background in social science and a passion for the arts and humanities, aiming to create an aesthetically pleasing, socially meaningful, and functionally accessible user experience on the web. I tend to focus on fully responsive, mobile-first, and accessible design and development.</td>
         </tr>
         <tr className="last">
           <th>Purpose:</th>
